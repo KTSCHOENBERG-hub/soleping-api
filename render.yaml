@@ -1,9 +1,10 @@
 # Render Blueprint — deploy with one click
 # https://render.com/docs/blueprint-spec
 
+
 services:
   - type: web
-    name: solesignal-api
+    name: soleping-api
     runtime: node
     plan: starter         # $7/mo — always on, free SSL
     buildCommand: npm install
@@ -15,3 +16,4 @@ services:
         sync: false       # Set this in Render dashboard to your frontend URL
     healthCheckPath: /api/health
     autoDeploy: true      # Auto-deploy on git push
+
