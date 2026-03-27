@@ -10,6 +10,7 @@ const SneaksAPI = require("sneaks-api");
 const path = require("path");
 
 const app = express();
+app.set("trust proxy", 1);
 const sneaks = new SneaksAPI();
 const cache = new NodeCache({ stdTTL: 300, checkperiod: 60 });
 const PORT = process.env.PORT || 3001;
