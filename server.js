@@ -7,6 +7,7 @@ const helmet = require("helmet");
 const rateLimit = require("express-rate-limit");
 const NodeCache = require("node-cache");
 const SneaksAPI = require("sneaks-api");
+const path = require("path");
 
 const app = express();
 const sneaks = new SneaksAPI();
@@ -16,6 +17,7 @@ const PORT = process.env.PORT || 3001;
 app.use(helmet());
 app.use(cors({ origin: "*" }));
 app.use(express.json());
+app.use(express.static(path.join(__dirname, "public")));
 app.use(rateLimit({ windowMs: 15 * 60 * 1000, max: 100, standardHeaders: true, legacyHeaders: false }));
 
 const doSearch = (q, n) =>
