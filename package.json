@@ -25,6 +25,7 @@
     "cors": "^2.8.5",
     "helmet": "^7.1.0",
     "express-rate-limit": "^7.1.5",
-    "node-cache": "^5.1.2"
+    "node-cache": "^5.1.2",
+    "got-scraping": "^4.2.1"
   }
 }
