@@ -8,6 +8,16 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const cache = new NodeCache({ stdTTL: 300 });
 
+// --- Load got-scraping (ESM) dynamically ---
+let gotScraping = null;
+async function getGot() {
+  if (!gotScraping) {
+    const mod = await import('got-scraping');
+    gotScraping = mod.gotScraping;
+  }
+  return gotScraping;
+}
+
 // --- Middleware ---
 app.use(cors());
 app.use(helmet({ frameguard: false, contentSecurityPolicy: false }));
@@ -40,36 +50,29 @@ const MARKETPLACE_FEES = {
   }
 };
 
-// --- Browser-like headers for StockX SSR fetch ---
-const STOCKX_HEADERS = {
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-  'Accept-Language': 'en-US,en;q=0.9',
-  'Accept-Encoding': 'gzip, deflate, br',
-  'Cache-Control': 'no-cache',
-  'Pragma': 'no-cache',
-  'Sec-Fetch-Dest': 'document',
-  'Sec-Fetch-Mode': 'navigate',
-  'Sec-Fetch-Site': 'none',
-  'Sec-Fetch-User': '?1',
-  'Upgrade-Insecure-Requests': '1'
-};
-
-// --- Search StockX via SSR (scrape __NEXT_DATA__) ---
+// --- Search StockX via SSR with got-scraping (browser TLS fingerprint) ---
 async function searchStockX(query, limit = 20) {
   const cacheKey = `sx:${query}:${limit}`;
   const cached = cache.get(cacheKey);
   if (cached) return cached;
 
+  const got = await getGot();
   const url = `https://stockx.com/search?s=${encodeURIComponent(query)}`;
-  const response = await fetch(url, {
-    method: 'GET',
-    headers: STOCKX_HEADERS,
-    redirect: 'follow'
+
+  const { body: html, statusCode } = await got({
+    url,
+    headerGeneratorOptions: {
+      browsers: [{ name: 'chrome', minVersion: 120, maxVersion: 126 }],
+      devices: ['desktop'],
+      operatingSystems: ['windows'],
+    },
+    responseType: 'text',
+    followRedirect: true,
+    timeout: { request: 15000 },
+    retry: { limit: 2 },
   });
 
-  if (!response.ok) throw new Error(`StockX SSR ${response.status}`);
-  const html = await response.text();
+  if (statusCode >= 400) throw new Error(`StockX ${statusCode}`);
 
   // Extract __NEXT_DATA__ JSON from SSR HTML
   const match = html.match(/<script id="__NEXT_DATA__" type="application\/json">([\s\S]*?)<\/script>/);
@@ -112,15 +115,8 @@ async function searchStockX(query, limit = 20) {
   }
 
   if (edges.length === 0) {
-    // Last resort: try to find browse results anywhere in the JSON
-    const jsonStr = match[1];
-    const browseMatch = jsonStr.match(/"browse"\s*:\s*\{[^]*?"edges"\s*:\s*\[/);
-    if (browseMatch) {
-      // Fallback - return empty rather than crash
-      console.warn('Found browse key but could not parse edges');
-    }
-    // Return empty results rather than throwing
-    cache.set(cacheKey, []);
+    console.warn('No edges found in StockX response for query:', query);
+    cache.set(cacheKey, [], 60);
     return [];
   }
 
@@ -331,7 +327,7 @@ setInterval(() => {
 app.listen(PORT, () => {
   console.log('=== SolePing API ===');
   console.log('Port:', PORT);
-  console.log('Data: StockX SSR (LIVE pricing)');
+  console.log('Data: StockX SSR via got-scraping (LIVE pricing)');
   console.log('Keep-alive: every 10 min');
-  console.log('=======================');
+  console.log('====================');
 });
