@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <g fill="none" stroke="#2C4654" stroke-width="1.5">
+    <circle cx="100" cy="100" r="92"/>
+    <circle cx="100" cy="100" r="86"/>
+  </g>
+  <g font-family="Cormorant Garamond, serif">
+    <text x="100" y="92" text-anchor="middle" font-size="46" font-style="italic" fill="#2C4654">JmA</text>
+    <text x="100" y="118" text-anchor="middle" font-size="9" letter-spacing="6" fill="#4F6D7A" font-weight="500">JUST · ME · ASHLEIGH</text>
+    <text x="100" y="135" text-anchor="middle" font-size="7" letter-spacing="3" fill="#D88C7A" font-style="italic">— dream house atelier —</text>
+  </g>
+  <g fill="#D88C7A">
+    <circle cx="30" cy="100" r="2"/>
+    <circle cx="170" cy="100" r="2"/>
+  </g>
+  <g stroke="#9BBFB1" stroke-width="0.6" fill="none">
+    <path d="M40 158 Q 60 152 80 158 T 120 158 T 160 158"/>
+  </g>
+</svg>

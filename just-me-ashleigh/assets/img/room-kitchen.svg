@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" font-family="Inter, sans-serif">
+  <defs>
+    <pattern id="kBeadboard" x="0" y="0" width="16" height="10" patternUnits="userSpaceOnUse">
+      <rect width="16" height="10" fill="#FDFCFA"/>
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#D7DEDC" stroke-width="0.4"/>
+    </pattern>
+    <pattern id="kSubway" x="0" y="0" width="24" height="12" patternUnits="userSpaceOnUse">
+      <rect width="24" height="12" fill="#FDFCFA"/>
+      <line x1="0" y1="12" x2="24" y2="12" stroke="#D7DEDC" stroke-width="0.4"/>
+      <line x1="12" y1="0" x2="12" y2="6" stroke="#D7DEDC" stroke-width="0.4"/>
+      <line x1="0" y1="6" x2="0" y2="12" stroke="#D7DEDC" stroke-width="0.4"/>
+      <line x1="24" y1="6" x2="24" y2="12" stroke="#D7DEDC" stroke-width="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- ceiling -->
+  <rect x="60" y="60" width="600" height="40" fill="#FDFCFA"/>
+  <!-- upper wall -->
+  <rect x="60" y="100" width="600" height="80" fill="url(#kBeadboard)"/>
+  <!-- subway tile backsplash -->
+  <rect x="60" y="180" width="600" height="100" fill="url(#kSubway)"/>
+  <!-- lower wall (paneling) -->
+  <rect x="60" y="280" width="600" height="120" fill="url(#kBeadboard)"/>
+  <!-- floor -->
+  <rect x="60" y="400" width="600" height="40" fill="#BFA98C"/>
+  <g stroke="#8B7355" stroke-width="0.4">
+    <line x1="60" y1="412" x2="660" y2="412"/>
+    <line x1="60" y1="424" x2="660" y2="424"/>
+    <line x1="100" y1="400" x2="100" y2="440"/>
+    <line x1="180" y1="400" x2="180" y2="440"/>
+    <line x1="260" y1="400" x2="260" y2="440"/>
+    <line x1="340" y1="400" x2="340" y2="440"/>
+    <line x1="420" y1="400" x2="420" y2="440"/>
+    <line x1="500" y1="400" x2="500" y2="440"/>
+    <line x1="580" y1="400" x2="580" y2="440"/>
+  </g>
+
+  <!-- upper cabinets (sea glass) -->
+  <g fill="#9BBFB1" stroke="#1A2832" stroke-width="0.5">
+    <rect x="90" y="110" width="60" height="70"/>
+    <rect x="160" y="110" width="60" height="70"/>
+    <rect x="500" y="110" width="60" height="70"/>
+    <rect x="570" y="110" width="60" height="70"/>
+  </g>
+  <g fill="#BFA98C">
+    <rect x="116" y="170" width="8" height="3"/><rect x="186" y="170" width="8" height="3"/>
+    <rect x="526" y="170" width="8" height="3"/><rect x="596" y="170" width="8" height="3"/>
+  </g>
+
+  <!-- range hood (custom plaster look) -->
+  <polygon points="290,180 290,110 420,110 420,180 400,180 400,150 310,150 310,180" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.5"/>
+  <text x="355" y="135" text-anchor="middle" font-size="6" fill="#4F6D7A" font-style="italic">custom plaster hood</text>
+
+  <!-- open shelving with seaglass display -->
+  <rect x="230" y="180" width="80" height="3" fill="#BFA98C"/>
+  <g fill="#9BBFB1" opacity="0.7"><circle cx="245" cy="172" r="5"/><circle cx="265" cy="170" r="6"/><circle cx="285" cy="173" r="4"/></g>
+
+  <!-- counter -->
+  <rect x="60" y="280" width="600" height="6" fill="#FDFCFA" stroke="#8B7355" stroke-width="0.4"/>
+  <!-- lower cabinets -->
+  <g fill="#FDFCFA" stroke="#1A2832" stroke-width="0.5">
+    <rect x="90" y="286" width="60" height="114"/>
+    <rect x="160" y="286" width="60" height="114"/>
+    <rect x="290" y="286" width="60" height="114"/>
+    <rect x="360" y="286" width="60" height="114"/>
+    <rect x="500" y="286" width="60" height="114"/>
+    <rect x="570" y="286" width="60" height="114"/>
+  </g>
+  <g fill="#BFA98C">
+    <rect x="116" y="335" width="8" height="3"/><rect x="186" y="335" width="8" height="3"/>
+    <rect x="316" y="335" width="8" height="3"/><rect x="386" y="335" width="8" height="3"/>
+    <rect x="526" y="335" width="8" height="3"/><rect x="596" y="335" width="8" height="3"/>
+  </g>
+
+  <!-- range -->
+  <rect x="310" y="220" width="100" height="60" fill="#2C4654" stroke="#1A2832" stroke-width="0.5"/>
+  <g fill="none" stroke="#FDFCFA" stroke-width="0.5">
+    <circle cx="328" cy="240" r="4"/><circle cx="362" cy="240" r="5"/>
+    <circle cx="392" cy="240" r="4"/><line x1="320" y1="260" x2="400" y2="260"/>
+  </g>
+
+  <!-- sink (apron) -->
+  <rect x="100" y="270" width="80" height="40" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.6"/>
+  <ellipse cx="140" cy="295" rx="20" ry="8" fill="none" stroke="#1A2832" stroke-width="0.4"/>
+  <rect x="135" y="245" width="10" height="30" fill="#BFA98C" stroke="#1A2832" stroke-width="0.4"/>
+  <circle cx="140" cy="245" r="3" fill="#BFA98C"/>
+
+  <!-- ISLAND -->
+  <rect x="180" y="350" width="280" height="50" fill="#2C4654" stroke="#1A2832" stroke-width="0.6"/>
+  <rect x="170" y="346" width="300" height="8" fill="#BFA98C" stroke="#8B7355" stroke-width="0.4"/>
+  <!-- island stools -->
+  <g>
+    <ellipse cx="225" cy="410" rx="14" ry="6" fill="#BFA98C" stroke="#1A2832" stroke-width="0.4"/>
+    <line x1="225" y1="416" x2="225" y2="438" stroke="#8B7355" stroke-width="1"/>
+    <ellipse cx="320" cy="410" rx="14" ry="6" fill="#BFA98C" stroke="#1A2832" stroke-width="0.4"/>
+    <line x1="320" y1="416" x2="320" y2="438" stroke="#8B7355" stroke-width="1"/>
+    <ellipse cx="415" cy="410" rx="14" ry="6" fill="#BFA98C" stroke="#1A2832" stroke-width="0.4"/>
+    <line x1="415" y1="416" x2="415" y2="438" stroke="#8B7355" stroke-width="1"/>
+  </g>
+
+  <!-- pendant lights over island -->
+  <line x1="225" y1="60" x2="225" y2="330" stroke="#1A2832" stroke-width="0.3"/>
+  <line x1="320" y1="60" x2="320" y2="330" stroke="#1A2832" stroke-width="0.3"/>
+  <line x1="415" y1="60" x2="415" y2="330" stroke="#1A2832" stroke-width="0.3"/>
+  <g fill="#FDFCFA" stroke="#BFA98C" stroke-width="0.6">
+    <path d="M212 320 L 212 340 L 238 340 L 238 320 Q 225 326 212 320 Z"/>
+    <path d="M307 320 L 307 340 L 333 340 L 333 320 Q 320 326 307 320 Z"/>
+    <path d="M402 320 L 402 340 L 428 340 L 428 320 Q 415 326 402 320 Z"/>
+  </g>
+
+  <!-- caption -->
+  <text x="40" y="468" font-family="Cormorant Garamond" font-size="13" font-style="italic" fill="#4F6D7A">the kitchen — sea-glass uppers, soapstone counters, a custom plaster hood, and three rattan pendants over the island</text>
+</svg>

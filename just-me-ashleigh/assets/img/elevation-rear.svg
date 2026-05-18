@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" font-family="Inter, sans-serif">
+  <defs>
+    <pattern id="rShingles" x="0" y="0" width="8" height="5" patternUnits="userSpaceOnUse">
+      <rect width="8" height="5" fill="#BFA98C"/>
+      <path d="M0 5 L4 0 L8 5" fill="none" stroke="#8B7355" stroke-width="0.3"/>
+    </pattern>
+    <pattern id="rSiding" x="0" y="0" width="20" height="6" patternUnits="userSpaceOnUse">
+      <rect width="20" height="6" fill="#FDFCFA"/>
+      <line x1="0" y1="6" x2="20" y2="6" stroke="#D7DEDC" stroke-width="0.4"/>
+    </pattern>
+  </defs>
+
+  <g font-family="Inter" font-size="9" fill="#4F6D7A">
+    <text x="40" y="22" font-size="14" fill="#2C4654" font-weight="600" letter-spacing="2">REAR (NORTH) ELEVATION — OCEAN SIDE</text>
+    <text x="40" y="36" letter-spacing="1.5">SCALE 1:48 · DECK FACES PREVAILING VIEW</text>
+    <text x="680" y="22" text-anchor="end" font-size="10" fill="#D88C7A" letter-spacing="2">SHEET A-2.1</text>
+  </g>
+
+  <line x1="40" y1="400" x2="680" y2="400" stroke="#8B7355" stroke-width="1.2"/>
+
+  <!-- foundation -->
+  <rect x="120" y="380" width="480" height="20" fill="#8B7355" opacity="0.4"/>
+
+  <!-- main body -->
+  <rect x="124" y="240" width="472" height="140" fill="url(#rSiding)" stroke="#BFA98C" stroke-width="0.5"/>
+
+  <!-- main gable (mirrored) -->
+  <polygon points="224,240 360,108 496,240" fill="url(#rShingles)" stroke="#8B7355" stroke-width="0.5"/>
+
+  <!-- left wing (now on right from rear) -->
+  <rect x="496" y="200" width="100" height="180" fill="url(#rSiding)" stroke="#BFA98C" stroke-width="0.5"/>
+  <polygon points="496,200 546,148 596,200" fill="url(#rShingles)" stroke="#8B7355" stroke-width="0.5"/>
+
+  <!-- right porch wing (now on left from rear) -->
+  <rect x="124" y="250" width="100" height="130" fill="url(#rSiding)" stroke="#BFA98C" stroke-width="0.5"/>
+  <polygon points="124,250 174,200 224,250" fill="url(#rShingles)" stroke="#8B7355" stroke-width="0.5"/>
+
+  <!-- screened porch screen panels (left side - screened porch from main) -->
+  <g fill="#D7DEDC" opacity="0.55" stroke="#1A2832" stroke-width="0.5">
+    <rect x="130" y="260" width="40" height="116"/>
+    <rect x="178" y="260" width="40" height="116"/>
+  </g>
+  <g stroke="#9BBFB1" stroke-width="0.2">
+    <line x1="130" y1="270" x2="170" y2="270"/><line x1="130" y1="280" x2="170" y2="280"/>
+    <line x1="130" y1="290" x2="170" y2="290"/><line x1="130" y1="300" x2="170" y2="300"/>
+    <line x1="130" y1="310" x2="170" y2="310"/><line x1="130" y1="320" x2="170" y2="320"/>
+    <line x1="130" y1="330" x2="170" y2="330"/><line x1="130" y1="340" x2="170" y2="340"/>
+    <line x1="130" y1="350" x2="170" y2="350"/><line x1="130" y1="360" x2="170" y2="360"/>
+    <line x1="178" y1="270" x2="218" y2="270"/><line x1="178" y1="280" x2="218" y2="280"/>
+    <line x1="178" y1="290" x2="218" y2="290"/><line x1="178" y1="300" x2="218" y2="300"/>
+    <line x1="178" y1="310" x2="218" y2="310"/><line x1="178" y1="320" x2="218" y2="320"/>
+    <line x1="178" y1="330" x2="218" y2="330"/><line x1="178" y1="340" x2="218" y2="340"/>
+    <line x1="178" y1="350" x2="218" y2="350"/><line x1="178" y1="360" x2="218" y2="360"/>
+  </g>
+
+  <!-- BIG OCEAN-FACING WINDOWS on main body -->
+  <g fill="#9BBFB1" stroke="#FDFCFA" stroke-width="1.5">
+    <rect x="244" y="156" width="60" height="84"/>
+    <rect x="316" y="156" width="60" height="84"/>
+    <rect x="388" y="156" width="60" height="84"/>
+  </g>
+  <g stroke="#FDFCFA" stroke-width="0.8">
+    <line x1="244" y1="170" x2="304" y2="170"/><line x1="244" y1="184" x2="304" y2="184"/>
+    <line x1="244" y1="198" x2="304" y2="198"/><line x1="244" y1="212" x2="304" y2="212"/>
+    <line x1="244" y1="226" x2="304" y2="226"/>
+    <line x1="259" y1="156" x2="259" y2="240"/><line x1="274" y1="156" x2="274" y2="240"/>
+    <line x1="289" y1="156" x2="289" y2="240"/>
+    <line x1="316" y1="170" x2="376" y2="170"/><line x1="316" y1="184" x2="376" y2="184"/>
+    <line x1="316" y1="198" x2="376" y2="198"/><line x1="316" y1="212" x2="376" y2="212"/>
+    <line x1="316" y1="226" x2="376" y2="226"/>
+    <line x1="331" y1="156" x2="331" y2="240"/><line x1="346" y1="156" x2="346" y2="240"/>
+    <line x1="361" y1="156" x2="361" y2="240"/>
+    <line x1="388" y1="170" x2="448" y2="170"/><line x1="388" y1="184" x2="448" y2="184"/>
+    <line x1="388" y1="198" x2="448" y2="198"/><line x1="388" y1="212" x2="448" y2="212"/>
+    <line x1="388" y1="226" x2="448" y2="226"/>
+    <line x1="403" y1="156" x2="403" y2="240"/><line x1="418" y1="156" x2="418" y2="240"/>
+    <line x1="433" y1="156" x2="433" y2="240"/>
+  </g>
+
+  <!-- French doors to deck -->
+  <g fill="#9BBFB1" stroke="#FDFCFA" stroke-width="1.5">
+    <rect x="270" y="290" width="36" height="90"/>
+    <rect x="320" y="290" width="36" height="90"/>
+    <rect x="370" y="290" width="36" height="90"/>
+  </g>
+  <g stroke="#FDFCFA" stroke-width="0.6">
+    <line x1="288" y1="290" x2="288" y2="380"/>
+    <line x1="338" y1="290" x2="338" y2="380"/>
+    <line x1="388" y1="290" x2="388" y2="380"/>
+    <line x1="270" y1="320" x2="306" y2="320"/><line x1="270" y1="350" x2="306" y2="350"/>
+    <line x1="320" y1="320" x2="356" y2="320"/><line x1="320" y1="350" x2="356" y2="350"/>
+    <line x1="370" y1="320" x2="406" y2="320"/><line x1="370" y1="350" x2="406" y2="350"/>
+  </g>
+
+  <!-- side wing upper windows -->
+  <g fill="#4F6D7A" stroke="#FDFCFA" stroke-width="1">
+    <rect x="514" y="220" width="32" height="40"/>
+    <rect x="556" y="220" width="32" height="40"/>
+    <rect x="514" y="290" width="32" height="40"/>
+    <rect x="556" y="290" width="32" height="40"/>
+  </g>
+  <g stroke="#FDFCFA" stroke-width="0.5">
+    <line x1="530" y1="220" x2="530" y2="260"/><line x1="514" y1="240" x2="546" y2="240"/>
+    <line x1="572" y1="220" x2="572" y2="260"/><line x1="556" y1="240" x2="588" y2="240"/>
+    <line x1="530" y1="290" x2="530" y2="330"/><line x1="514" y1="310" x2="546" y2="310"/>
+    <line x1="572" y1="290" x2="572" y2="330"/><line x1="556" y1="310" x2="588" y2="310"/>
+  </g>
+
+  <!-- BACK DECK -->
+  <rect x="240" y="380" width="240" height="6" fill="#BFA98C"/>
+  <g fill="#BFA98C" stroke="#8B7355" stroke-width="0.3">
+    <rect x="240" y="380" width="240" height="20"/>
+  </g>
+  <g stroke="#FDFCFA" stroke-width="1">
+    <rect x="244" y="386" width="6" height="0" fill="none"/>
+  </g>
+  <!-- railings around deck -->
+  <line x1="240" y1="378" x2="480" y2="378" stroke="#FDFCFA" stroke-width="1.5"/>
+  <g stroke="#FDFCFA" stroke-width="0.4">
+    <line x1="248" y1="378" x2="248" y2="400"/><line x1="256" y1="378" x2="256" y2="400"/>
+    <line x1="264" y1="378" x2="264" y2="400"/><line x1="272" y1="378" x2="272" y2="400"/>
+    <line x1="280" y1="378" x2="280" y2="400"/><line x1="288" y1="378" x2="288" y2="400"/>
+    <line x1="296" y1="378" x2="296" y2="400"/><line x1="304" y1="378" x2="304" y2="400"/>
+    <line x1="312" y1="378" x2="312" y2="400"/><line x1="320" y1="378" x2="320" y2="400"/>
+    <line x1="328" y1="378" x2="328" y2="400"/><line x1="336" y1="378" x2="336" y2="400"/>
+    <line x1="344" y1="378" x2="344" y2="400"/><line x1="352" y1="378" x2="352" y2="400"/>
+    <line x1="360" y1="378" x2="360" y2="400"/><line x1="368" y1="378" x2="368" y2="400"/>
+    <line x1="376" y1="378" x2="376" y2="400"/><line x1="384" y1="378" x2="384" y2="400"/>
+    <line x1="392" y1="378" x2="392" y2="400"/><line x1="400" y1="378" x2="400" y2="400"/>
+    <line x1="408" y1="378" x2="408" y2="400"/><line x1="416" y1="378" x2="416" y2="400"/>
+    <line x1="424" y1="378" x2="424" y2="400"/><line x1="432" y1="378" x2="432" y2="400"/>
+    <line x1="440" y1="378" x2="440" y2="400"/><line x1="448" y1="378" x2="448" y2="400"/>
+    <line x1="456" y1="378" x2="456" y2="400"/><line x1="464" y1="378" x2="464" y2="400"/>
+    <line x1="472" y1="378" x2="472" y2="400"/>
+  </g>
+
+  <!-- pergola posts -->
+  <g fill="#BFA98C">
+    <rect x="240" y="290" width="6" height="100"/>
+    <rect x="358" y="290" width="6" height="100"/>
+    <rect x="474" y="290" width="6" height="100"/>
+  </g>
+  <line x1="240" y1="292" x2="480" y2="292" stroke="#BFA98C" stroke-width="3"/>
+
+  <!-- distant ocean indication -->
+  <line x1="40" y1="100" x2="120" y2="100" stroke="#9BBFB1" stroke-width="0.4" stroke-dasharray="4,2"/>
+  <line x1="600" y1="100" x2="680" y2="100" stroke="#9BBFB1" stroke-width="0.4" stroke-dasharray="4,2"/>
+  <text x="80" y="94" font-size="6" fill="#9BBFB1" font-style="italic">ocean view line</text>
+
+  <g font-size="8" fill="#4F6D7A">
+    <text x="40" y="450" font-weight="600" letter-spacing="1.5">DESIGN NOTES</text>
+    <text x="40" y="462">Ocean-facing facade maximizes glazing — three large 6-over-6 windows above and three pairs of French doors below open to back deck and pergola.</text>
+    <text x="40" y="472">Pergola is intentionally unfinished beam-only to invite climbing wisteria or string lights.</text>
+  </g>
+
+  <text x="690" y="448" text-anchor="end" font-family="Caveat" font-size="14" fill="#D88C7A" opacity="0.8">— just me, ashleigh</text>
+</svg>

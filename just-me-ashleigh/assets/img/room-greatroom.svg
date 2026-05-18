@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" font-family="Inter, sans-serif">
+  <defs>
+    <linearGradient id="grWall" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#FDFCFA"/>
+      <stop offset="100%" stop-color="#F4EFE6"/>
+    </linearGradient>
+    <pattern id="grFloor" x="0" y="0" width="60" height="14" patternUnits="userSpaceOnUse">
+      <rect width="60" height="14" fill="#BFA98C"/>
+      <line x1="0" y1="14" x2="60" y2="14" stroke="#8B7355" stroke-width="0.5"/>
+      <line x1="20" y1="0" x2="20" y2="14" stroke="#8B7355" stroke-width="0.3"/>
+      <line x1="42" y1="0" x2="42" y2="14" stroke="#8B7355" stroke-width="0.3"/>
+    </pattern>
+  </defs>
+
+  <!-- ceiling vault (sea fog blue) -->
+  <polygon points="60,60 360,40 660,60 660,180 60,180" fill="#D7DEDC"/>
+  <!-- wall -->
+  <rect x="60" y="180" width="600" height="220" fill="url(#grWall)"/>
+  <!-- floor (perspective) -->
+  <polygon points="60,400 660,400 580,440 140,440" fill="url(#grFloor)"/>
+
+  <!-- exposed beams -->
+  <g fill="#BFA98C" stroke="#8B7355" stroke-width="0.5">
+    <polygon points="180,70 540,55 545,62 185,77"/>
+    <polygon points="180,110 540,95 545,102 185,117"/>
+    <polygon points="180,150 540,135 545,142 185,157"/>
+  </g>
+
+  <!-- window -->
+  <rect x="220" y="200" width="120" height="160" fill="#9BBFB1" stroke="#FDFCFA" stroke-width="2"/>
+  <g stroke="#FDFCFA" stroke-width="1.2">
+    <line x1="220" y1="240" x2="340" y2="240"/>
+    <line x1="220" y1="280" x2="340" y2="280"/>
+    <line x1="220" y1="320" x2="340" y2="320"/>
+    <line x1="260" y1="200" x2="260" y2="360"/>
+    <line x1="300" y1="200" x2="300" y2="360"/>
+  </g>
+  <!-- window trim -->
+  <rect x="212" y="194" width="136" height="6" fill="#FDFCFA"/>
+  <rect x="212" y="360" width="136" height="6" fill="#FDFCFA"/>
+
+  <!-- fireplace -->
+  <rect x="380" y="240" width="120" height="160" fill="#FDFCFA" stroke="#BFA98C" stroke-width="0.5"/>
+  <rect x="400" y="280" width="80" height="60" fill="#2C4654"/>
+  <rect x="395" y="240" width="90" height="14" fill="#BFA98C"/>
+  <g fill="#D88C7A" opacity="0.6">
+    <circle cx="425" cy="320" r="6"/>
+    <circle cx="440" cy="315" r="7"/>
+    <circle cx="455" cy="320" r="6"/>
+  </g>
+  <text x="440" y="375" text-anchor="middle" font-size="7" fill="#4F6D7A">cast stone surround</text>
+
+  <!-- chimney up -->
+  <rect x="410" y="60" width="60" height="180" fill="#FDFCFA" stroke="#BFA98C" stroke-width="0.4"/>
+
+  <!-- floating shelves -->
+  <rect x="520" y="280" width="100" height="3" fill="#BFA98C"/>
+  <rect x="520" y="320" width="100" height="3" fill="#BFA98C"/>
+  <g fill="#D88C7A">
+    <rect x="530" y="270" width="8" height="10"/><rect x="545" y="266" width="6" height="14"/>
+    <rect x="560" y="272" width="10" height="8"/><rect x="580" y="268" width="6" height="12"/>
+    <rect x="535" y="305" width="14" height="15"/><rect x="560" y="308" width="8" height="12"/>
+  </g>
+
+  <!-- sectional sofa (forefront) -->
+  <g fill="#9BBFB1" stroke="#1A2832" stroke-width="0.6">
+    <rect x="140" y="380" width="220" height="50" rx="6"/>
+    <rect x="140" y="345" width="220" height="40" rx="6"/>
+  </g>
+  <g fill="#FDFCFA">
+    <rect x="155" y="350" width="40" height="22" rx="4"/>
+    <rect x="205" y="350" width="40" height="22" rx="4"/>
+    <rect x="255" y="350" width="40" height="22" rx="4"/>
+    <rect x="305" y="350" width="40" height="22" rx="4"/>
+  </g>
+
+  <!-- coffee table -->
+  <rect x="200" y="430" width="120" height="14" fill="#BFA98C" stroke="#1A2832" stroke-width="0.5"/>
+  <g fill="#D88C7A"><circle cx="230" cy="430" r="3"/><circle cx="270" cy="430" r="2.5"/></g>
+
+  <!-- pendant from beam -->
+  <line x1="450" y1="65" x2="450" y2="180" stroke="#1A2832" stroke-width="0.4"/>
+  <ellipse cx="450" cy="195" rx="22" ry="14" fill="none" stroke="#BFA98C" stroke-width="0.6"/>
+
+  <!-- side table + lamp -->
+  <rect x="600" y="380" width="34" height="44" fill="#BFA98C" stroke="#1A2832" stroke-width="0.5"/>
+  <rect x="608" y="350" width="18" height="32" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.4"/>
+  <line x1="617" y1="380" x2="617" y2="350" stroke="#1A2832" stroke-width="0.4"/>
+
+  <!-- caption -->
+  <text x="40" y="468" font-family="Cormorant Garamond" font-size="13" font-style="italic" fill="#4F6D7A">the great room — vaulted to the ridge, anchored by cast-stone fireplace and a sea-fog blue ceiling</text>
+</svg>

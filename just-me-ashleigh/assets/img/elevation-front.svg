@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" font-family="Inter, sans-serif">
+  <defs>
+    <pattern id="elShingles" x="0" y="0" width="8" height="5" patternUnits="userSpaceOnUse">
+      <rect width="8" height="5" fill="#BFA98C"/>
+      <path d="M0 5 L4 0 L8 5" fill="none" stroke="#8B7355" stroke-width="0.3"/>
+    </pattern>
+    <pattern id="elSiding" x="0" y="0" width="20" height="6" patternUnits="userSpaceOnUse">
+      <rect width="20" height="6" fill="#FDFCFA"/>
+      <line x1="0" y1="6" x2="20" y2="6" stroke="#D7DEDC" stroke-width="0.4"/>
+    </pattern>
+  </defs>
+
+  <g font-family="Inter" font-size="9" fill="#4F6D7A">
+    <text x="40" y="22" font-size="14" fill="#2C4654" font-weight="600" letter-spacing="2">FRONT (SOUTH) ELEVATION</text>
+    <text x="40" y="36" letter-spacing="1.5">SCALE 1:48 · OVERALL HEIGHT 28'-6" TO RIDGE</text>
+    <text x="680" y="22" text-anchor="end" font-size="10" fill="#D88C7A" letter-spacing="2">SHEET A-2.0</text>
+  </g>
+
+  <!-- ground line -->
+  <line x1="40" y1="400" x2="680" y2="400" stroke="#8B7355" stroke-width="1.2"/>
+  <g stroke="#8B7355" stroke-width="0.5">
+    <line x1="50" y1="400" x2="46" y2="412"/><line x1="80" y1="400" x2="76" y2="412"/>
+    <line x1="110" y1="400" x2="106" y2="412"/><line x1="140" y1="400" x2="136" y2="412"/>
+    <line x1="170" y1="400" x2="166" y2="412"/><line x1="200" y1="400" x2="196" y2="412"/>
+    <line x1="230" y1="400" x2="226" y2="412"/><line x1="260" y1="400" x2="256" y2="412"/>
+    <line x1="290" y1="400" x2="286" y2="412"/><line x1="320" y1="400" x2="316" y2="412"/>
+    <line x1="350" y1="400" x2="346" y2="412"/><line x1="380" y1="400" x2="376" y2="412"/>
+    <line x1="410" y1="400" x2="406" y2="412"/><line x1="440" y1="400" x2="436" y2="412"/>
+    <line x1="470" y1="400" x2="466" y2="412"/><line x1="500" y1="400" x2="496" y2="412"/>
+    <line x1="530" y1="400" x2="526" y2="412"/><line x1="560" y1="400" x2="556" y2="412"/>
+    <line x1="590" y1="400" x2="586" y2="412"/><line x1="620" y1="400" x2="616" y2="412"/>
+    <line x1="650" y1="400" x2="646" y2="412"/>
+  </g>
+
+  <!-- foundation -->
+  <rect x="120" y="380" width="480" height="20" fill="#8B7355" opacity="0.4"/>
+
+  <!-- main body siding -->
+  <rect x="124" y="240" width="472" height="140" fill="url(#elSiding)" stroke="#BFA98C" stroke-width="0.5"/>
+
+  <!-- left dormer wing -->
+  <rect x="124" y="200" width="100" height="180" fill="url(#elSiding)" stroke="#BFA98C" stroke-width="0.5"/>
+  <polygon points="124,200 174,148 224,200" fill="url(#elShingles)" stroke="#8B7355" stroke-width="0.5"/>
+
+  <!-- main gable -->
+  <polygon points="224,240 360,108 496,240" fill="url(#elShingles)" stroke="#8B7355" stroke-width="0.5"/>
+
+  <!-- right porch wing -->
+  <rect x="496" y="250" width="100" height="130" fill="url(#elSiding)" stroke="#BFA98C" stroke-width="0.5"/>
+  <polygon points="496,250 546,200 596,250" fill="url(#elShingles)" stroke="#8B7355" stroke-width="0.5"/>
+
+  <!-- widow's walk on ridge -->
+  <rect x="335" y="98" width="50" height="14" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.5"/>
+  <g stroke="#1A2832" stroke-width="0.5"><line x1="340" y1="98" x2="340" y2="112"/>
+    <line x1="350" y1="98" x2="350" y2="112"/><line x1="360" y1="98" x2="360" y2="112"/>
+    <line x1="370" y1="98" x2="370" y2="112"/><line x1="380" y1="98" x2="380" y2="112"/></g>
+  <text x="360" y="92" text-anchor="middle" font-size="7" fill="#4F6D7A" font-style="italic" font-family="Cormorant Garamond">widow's walk</text>
+
+  <!-- chimney -->
+  <rect x="430" y="118" width="18" height="50" fill="#FDFCFA" stroke="#8B7355" stroke-width="0.4"/>
+  <rect x="426" y="114" width="26" height="6" fill="#8B7355"/>
+
+  <!-- round gable window -->
+  <circle cx="360" cy="180" r="16" fill="#9BBFB1" stroke="#FDFCFA" stroke-width="2"/>
+  <line x1="344" y1="180" x2="376" y2="180" stroke="#FDFCFA" stroke-width="1"/>
+  <line x1="360" y1="164" x2="360" y2="196" stroke="#FDFCFA" stroke-width="1"/>
+
+  <!-- main floor windows -->
+  <g>
+    <!-- upper floor -->
+    <g>
+      <rect x="244" y="252" width="36" height="46" fill="#4F6D7A" stroke="#FDFCFA" stroke-width="1.2"/>
+      <rect x="298" y="252" width="36" height="46" fill="#4F6D7A" stroke="#FDFCFA" stroke-width="1.2"/>
+      <rect x="386" y="252" width="36" height="46" fill="#4F6D7A" stroke="#FDFCFA" stroke-width="1.2"/>
+      <rect x="440" y="252" width="36" height="46" fill="#4F6D7A" stroke="#FDFCFA" stroke-width="1.2"/>
+      <g stroke="#FDFCFA" stroke-width="0.8">
+        <line x1="262" y1="252" x2="262" y2="298"/><line x1="244" y1="275" x2="280" y2="275"/>
+        <line x1="316" y1="252" x2="316" y2="298"/><line x1="298" y1="275" x2="334" y2="275"/>
+        <line x1="404" y1="252" x2="404" y2="298"/><line x1="386" y1="275" x2="422" y2="275"/>
+        <line x1="458" y1="252" x2="458" y2="298"/><line x1="440" y1="275" x2="476" y2="275"/>
+      </g>
+      <!-- shutters -->
+      <g fill="#2C4654">
+        <rect x="236" y="252" width="6" height="46"/><rect x="282" y="252" width="6" height="46"/>
+        <rect x="290" y="252" width="6" height="46"/><rect x="336" y="252" width="6" height="46"/>
+        <rect x="378" y="252" width="6" height="46"/><rect x="424" y="252" width="6" height="46"/>
+        <rect x="432" y="252" width="6" height="46"/><rect x="478" y="252" width="6" height="46"/>
+      </g>
+      <!-- flower boxes -->
+      <rect x="240" y="298" width="48" height="6" fill="#BFA98C"/>
+      <rect x="294" y="298" width="48" height="6" fill="#BFA98C"/>
+      <rect x="382" y="298" width="48" height="6" fill="#BFA98C"/>
+      <rect x="436" y="298" width="48" height="6" fill="#BFA98C"/>
+    </g>
+
+    <!-- left wing windows -->
+    <rect x="140" y="220" width="28" height="36" fill="#4F6D7A" stroke="#FDFCFA" stroke-width="1"/>
+    <rect x="180" y="220" width="28" height="36" fill="#4F6D7A" stroke="#FDFCFA" stroke-width="1"/>
+    <g stroke="#FDFCFA" stroke-width="0.6">
+      <line x1="154" y1="220" x2="154" y2="256"/><line x1="140" y1="238" x2="168" y2="238"/>
+      <line x1="194" y1="220" x2="194" y2="256"/><line x1="180" y1="238" x2="208" y2="238"/>
+    </g>
+    <rect x="140" y="290" width="28" height="36" fill="#4F6D7A" stroke="#FDFCFA" stroke-width="1"/>
+    <rect x="180" y="290" width="28" height="36" fill="#4F6D7A" stroke="#FDFCFA" stroke-width="1"/>
+    <g stroke="#FDFCFA" stroke-width="0.6">
+      <line x1="154" y1="290" x2="154" y2="326"/><line x1="140" y1="308" x2="168" y2="308"/>
+      <line x1="194" y1="290" x2="194" y2="326"/><line x1="180" y1="308" x2="208" y2="308"/>
+    </g>
+
+    <!-- right porch wing windows -->
+    <rect x="510" y="270" width="32" height="40" fill="#9BBFB1" stroke="#FDFCFA" stroke-width="1"/>
+    <rect x="552" y="270" width="32" height="40" fill="#9BBFB1" stroke="#FDFCFA" stroke-width="1"/>
+    <g stroke="#FDFCFA" stroke-width="0.5">
+      <line x1="526" y1="270" x2="526" y2="310"/><line x1="510" y1="290" x2="542" y2="290"/>
+      <line x1="568" y1="270" x2="568" y2="310"/><line x1="552" y1="290" x2="584" y2="290"/>
+    </g>
+  </g>
+
+  <!-- WRAPAROUND PORCH -->
+  <rect x="120" y="380" width="480" height="20" fill="none" stroke="#1A2832" stroke-width="0"/>
+  <rect x="120" y="354" width="480" height="4" fill="#BFA98C"/>
+  <!-- porch posts -->
+  <g fill="#FDFCFA" stroke="#1A2832" stroke-width="0.6">
+    <rect x="120" y="354" width="6" height="46"/>
+    <rect x="234" y="354" width="6" height="46"/>
+    <rect x="354" y="354" width="6" height="46"/>
+    <rect x="474" y="354" width="6" height="46"/>
+    <rect x="594" y="354" width="6" height="46"/>
+  </g>
+  <!-- railings -->
+  <line x1="126" y1="378" x2="234" y2="378" stroke="#FDFCFA" stroke-width="1.5"/>
+  <line x1="240" y1="378" x2="354" y2="378" stroke="#FDFCFA" stroke-width="1.5"/>
+  <line x1="360" y1="378" x2="474" y2="378" stroke="#FDFCFA" stroke-width="1.5"/>
+  <line x1="480" y1="378" x2="594" y2="378" stroke="#FDFCFA" stroke-width="1.5"/>
+  <!-- balusters -->
+  <g stroke="#FDFCFA" stroke-width="0.5">
+    <line x1="135" y1="378" x2="135" y2="400"/><line x1="145" y1="378" x2="145" y2="400"/>
+    <line x1="155" y1="378" x2="155" y2="400"/><line x1="165" y1="378" x2="165" y2="400"/>
+    <line x1="175" y1="378" x2="175" y2="400"/><line x1="185" y1="378" x2="185" y2="400"/>
+    <line x1="195" y1="378" x2="195" y2="400"/><line x1="205" y1="378" x2="205" y2="400"/>
+    <line x1="215" y1="378" x2="215" y2="400"/><line x1="225" y1="378" x2="225" y2="400"/>
+
+    <line x1="249" y1="378" x2="249" y2="400"/><line x1="259" y1="378" x2="259" y2="400"/>
+    <line x1="269" y1="378" x2="269" y2="400"/><line x1="279" y1="378" x2="279" y2="400"/>
+    <line x1="289" y1="378" x2="289" y2="400"/><line x1="299" y1="378" x2="299" y2="400"/>
+    <line x1="309" y1="378" x2="309" y2="400"/><line x1="319" y1="378" x2="319" y2="400"/>
+    <line x1="329" y1="378" x2="329" y2="400"/><line x1="339" y1="378" x2="339" y2="400"/>
+    <line x1="349" y1="378" x2="349" y2="400"/>
+
+    <line x1="369" y1="378" x2="369" y2="400"/><line x1="379" y1="378" x2="379" y2="400"/>
+    <line x1="389" y1="378" x2="389" y2="400"/><line x1="399" y1="378" x2="399" y2="400"/>
+    <line x1="409" y1="378" x2="409" y2="400"/><line x1="419" y1="378" x2="419" y2="400"/>
+    <line x1="429" y1="378" x2="429" y2="400"/><line x1="439" y1="378" x2="439" y2="400"/>
+    <line x1="449" y1="378" x2="449" y2="400"/><line x1="459" y1="378" x2="459" y2="400"/>
+    <line x1="469" y1="378" x2="469" y2="400"/>
+
+    <line x1="489" y1="378" x2="489" y2="400"/><line x1="499" y1="378" x2="499" y2="400"/>
+    <line x1="509" y1="378" x2="509" y2="400"/><line x1="519" y1="378" x2="519" y2="400"/>
+    <line x1="529" y1="378" x2="529" y2="400"/><line x1="539" y1="378" x2="539" y2="400"/>
+    <line x1="549" y1="378" x2="549" y2="400"/><line x1="559" y1="378" x2="559" y2="400"/>
+    <line x1="569" y1="378" x2="569" y2="400"/><line x1="579" y1="378" x2="579" y2="400"/>
+    <line x1="589" y1="378" x2="589" y2="400"/>
+  </g>
+
+  <!-- front door (signature) -->
+  <rect x="346" y="320" width="28" height="58" fill="#2C4654" stroke="#FDFCFA" stroke-width="1"/>
+  <rect x="343" y="312" width="34" height="10" fill="#9BBFB1" stroke="#FDFCFA" stroke-width="1"/>
+  <line x1="346" y1="350" x2="374" y2="350" stroke="#FDFCFA" stroke-width="0.8"/>
+  <circle cx="368" cy="356" r="1" fill="#D88C7A"/>
+
+  <!-- planters -->
+  <ellipse cx="332" cy="385" rx="6" ry="3" fill="#FDFCFA" stroke="#BFA98C" stroke-width="0.4"/>
+  <ellipse cx="388" cy="385" rx="6" ry="3" fill="#FDFCFA" stroke="#BFA98C" stroke-width="0.4"/>
+
+  <!-- dimensions -->
+  <g stroke="#D88C7A" stroke-width="0.4" fill="#D88C7A" font-size="7" font-family="Inter">
+    <line x1="700" y1="108" x2="700" y2="400"/>
+    <line x1="696" y1="108" x2="704" y2="108"/><line x1="696" y1="400" x2="704" y2="400"/>
+    <text x="710" y="256" transform="rotate(-90 710 256)" text-anchor="middle">28'-6"</text>
+    <line x1="700" y1="240" x2="704" y2="240"/><text x="708" y="244" font-size="6.5">9'-0" plate</text>
+    <line x1="700" y1="320" x2="704" y2="320"/><text x="708" y="324" font-size="6.5">finish floor 2</text>
+    <line x1="700" y1="380" x2="704" y2="380"/><text x="708" y="384" font-size="6.5">deck</text>
+  </g>
+
+  <g font-size="8" fill="#4F6D7A">
+    <text x="40" y="450" font-weight="600" letter-spacing="1.5">MATERIAL CALLOUTS</text>
+    <text x="40" y="462">① White-painted clapboard siding · 4" reveal   ② Cedar shingle roof · weathered grey   ③ True-divided-lite windows · 6 over 6</text>
+    <text x="40" y="472">④ Painted shutters in 'Deep Marine' #2C4654   ⑤ Dutch door in 'Deep Marine' with sea-glass transom   ⑥ White spindle railings, cedar deck</text>
+  </g>
+
+  <text x="690" y="448" text-anchor="end" font-family="Caveat" font-size="14" fill="#D88C7A" opacity="0.8">— just me, ashleigh</text>
+</svg>

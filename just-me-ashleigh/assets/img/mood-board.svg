@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 600" font-family="Inter, sans-serif">
+  <defs>
+    <pattern id="mbLinen" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#F4EFE6"/>
+      <line x1="0" y1="0" x2="6" y2="0" stroke="#BFA98C" stroke-width="0.2"/>
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#BFA98C" stroke-width="0.2"/>
+    </pattern>
+    <pattern id="mbRattan" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#BFA98C"/>
+      <line x1="0" y1="0" x2="8" y2="8" stroke="#8B7355" stroke-width="0.4"/>
+      <line x1="8" y1="0" x2="0" y2="8" stroke="#8B7355" stroke-width="0.4"/>
+    </pattern>
+    <pattern id="mbWood" x="0" y="0" width="40" height="20" patternUnits="userSpaceOnUse">
+      <rect width="40" height="20" fill="#BFA98C"/>
+      <path d="M0 5 Q 20 3 40 5" stroke="#8B7355" stroke-width="0.4" fill="none"/>
+      <path d="M0 12 Q 20 10 40 13" stroke="#8B7355" stroke-width="0.3" fill="none"/>
+      <path d="M0 17 Q 20 15 40 17" stroke="#8B7355" stroke-width="0.3" fill="none"/>
+    </pattern>
+    <pattern id="mbShell" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#E8C9B8"/>
+      <path d="M10 4 Q 14 8 16 12 M10 4 Q 6 8 4 12 M10 4 L 10 15" stroke="#D88C7A" stroke-width="0.4" fill="none"/>
+    </pattern>
+    <pattern id="mbTile" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
+      <rect width="14" height="14" fill="#9BBFB1"/>
+      <path d="M0 14 H14 M0 0 V14" stroke="#FDFCFA" stroke-width="0.3"/>
+    </pattern>
+  </defs>
+
+  <!-- main hero swatch: linen -->
+  <rect x="40" y="40" width="240" height="180" fill="url(#mbLinen)" stroke="#BFA98C" stroke-width="0.5"/>
+  <text x="50" y="208" font-size="7" fill="#4F6D7A" font-style="italic" font-family="Cormorant Garamond">washed belgian linen · oyster</text>
+
+  <!-- driftwood -->
+  <rect x="300" y="40" width="180" height="110" fill="url(#mbWood)" stroke="#8B7355" stroke-width="0.5" transform="rotate(-2 390 95)"/>
+  <text x="310" y="158" font-size="7" fill="#4F6D7A" font-style="italic" font-family="Cormorant Garamond" transform="rotate(-2 310 158)">reclaimed white oak · limed</text>
+
+  <!-- sea glass tile -->
+  <rect x="500" y="40" width="180" height="110" fill="url(#mbTile)" stroke="#9BBFB1" stroke-width="0.5"/>
+  <text x="510" y="168" font-size="7" fill="#4F6D7A" font-style="italic" font-family="Cormorant Garamond">handmade zellige · sea glass</text>
+
+  <!-- rattan -->
+  <circle cx="380" cy="240" r="60" fill="url(#mbRattan)" stroke="#8B7355" stroke-width="0.5"/>
+  <text x="380" y="310" text-anchor="middle" font-size="7" fill="#4F6D7A" font-style="italic" font-family="Cormorant Garamond">caned rattan</text>
+
+  <!-- shell pink swatch -->
+  <rect x="500" y="180" width="180" height="120" fill="url(#mbShell)" stroke="#D88C7A" stroke-width="0.5"/>
+  <text x="510" y="318" font-size="7" fill="#4F6D7A" font-style="italic" font-family="Cormorant Garamond">conch interior pink</text>
+
+  <!-- color palette circle -->
+  <g transform="translate(160 280)">
+    <circle r="55" fill="#FDFCFA" stroke="#BFA98C" stroke-width="0.5"/>
+    <g>
+      <path d="M0 0 L 0 -55 A 55 55 0 0 1 47.6 27.5 Z" fill="#2C4654"/>
+      <path d="M0 0 L 47.6 27.5 A 55 55 0 0 1 -47.6 27.5 Z" fill="#9BBFB1"/>
+      <path d="M0 0 L -47.6 27.5 A 55 55 0 0 1 0 -55 Z" fill="#E8C9B8"/>
+    </g>
+    <circle r="20" fill="#FDFCFA"/>
+    <text y="-3" text-anchor="middle" font-size="6" letter-spacing="1" fill="#2C4654" font-family="Inter" font-weight="600">PALETTE</text>
+    <text y="6" text-anchor="middle" font-size="5" letter-spacing="1" fill="#4F6D7A" font-family="Inter">3 of 9</text>
+  </g>
+  <text x="160" y="358" text-anchor="middle" font-size="7" fill="#4F6D7A" font-style="italic" font-family="Cormorant Garamond">tertiary palette · deep marine, sea glass, conch</text>
+
+  <!-- knotted rope -->
+  <g transform="translate(40 380)">
+    <path d="M0 30 q 20 -30 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0" fill="none" stroke="#BFA98C" stroke-width="8" stroke-linecap="round"/>
+    <path d="M0 30 q 20 -30 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0" fill="none" stroke="#8B7355" stroke-width="0.5" stroke-dasharray="2,3"/>
+  </g>
+  <text x="50" y="440" font-size="7" fill="#4F6D7A" font-style="italic" font-family="Cormorant Garamond">jute &amp; sisal · 1/2" twisted</text>
+
+  <!-- brass pull -->
+  <g transform="translate(360 400)">
+    <rect x="0" y="0" width="120" height="14" rx="7" fill="#BFA98C" stroke="#8B7355" stroke-width="0.5"/>
+    <rect x="2" y="2" width="116" height="3" fill="#FDFCFA" opacity="0.6"/>
+  </g>
+  <text x="370" y="438" font-size="7" fill="#4F6D7A" font-style="italic" font-family="Cormorant Garamond">unlacquered brass · cabinet pull</text>
+
+  <!-- sand dollar -->
+  <g transform="translate(560 410)">
+    <circle r="34" fill="#F4EFE6" stroke="#BFA98C" stroke-width="0.6"/>
+    <g fill="none" stroke="#BFA98C" stroke-width="0.5">
+      <path d="M0 -28 q 4 12 0 24 q -4 -12 0 -24"/>
+      <path d="M-24 14 q 12 -4 24 0 q -12 4 -24 0" transform="rotate(72)"/>
+      <path d="M-24 14 q 12 -4 24 0 q -12 4 -24 0" transform="rotate(144)"/>
+      <path d="M-24 14 q 12 -4 24 0 q -12 4 -24 0" transform="rotate(216)"/>
+      <path d="M-24 14 q 12 -4 24 0 q -12 4 -24 0" transform="rotate(288)"/>
+      <circle r="3"/>
+    </g>
+  </g>
+  <text x="560" y="468" text-anchor="middle" font-size="7" fill="#4F6D7A" font-style="italic" font-family="Cormorant Garamond">sand dollar</text>
+
+  <!-- handwritten note -->
+  <g transform="translate(40 490)" font-family="Caveat" font-size="16" fill="#D88C7A">
+    <text>quiet, sun-bleached, gently weathered.</text>
+    <text x="0" y="22">nothing too new — every surface should look</text>
+    <text x="0" y="44">like it's already been loved a long time.</text>
+    <text x="0" y="70" font-size="13" fill="#4F6D7A">— ash</text>
+  </g>
+
+  <!-- glue tape / washi -->
+  <g opacity="0.7">
+    <rect x="260" y="30" width="40" height="14" fill="#E8C9B8" transform="rotate(-8 280 37)"/>
+    <rect x="475" y="160" width="40" height="14" fill="#9BBFB1" opacity="0.6" transform="rotate(6 495 167)"/>
+    <rect x="40" y="370" width="40" height="14" fill="#BFA98C" opacity="0.7" transform="rotate(-4 60 377)"/>
+  </g>
+</svg>
