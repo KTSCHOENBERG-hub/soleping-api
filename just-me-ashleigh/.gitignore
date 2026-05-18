@@ -1,0 +1,4 @@
+build/preview-*.png
+build/*.png
+__pycache__/
+*.pyc

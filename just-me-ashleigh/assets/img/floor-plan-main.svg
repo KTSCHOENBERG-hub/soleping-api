@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" font-family="Inter, sans-serif">
+  <defs>
+    <pattern id="wallHatch" patternUnits="userSpaceOnUse" width="4" height="4" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="4" stroke="#1A2832" stroke-width="0.8"/>
+    </pattern>
+    <pattern id="deckBoards" patternUnits="userSpaceOnUse" width="6" height="6">
+      <rect width="6" height="6" fill="#E8DCC4"/>
+      <line x1="0" y1="6" x2="6" y2="6" stroke="#BFA98C" stroke-width="0.3"/>
+    </pattern>
+    <pattern id="tile" patternUnits="userSpaceOnUse" width="8" height="8">
+      <rect width="8" height="8" fill="#D7DEDC"/>
+      <path d="M0 0 H8 M0 8 H8 M0 0 V8 M8 0 V8" stroke="#9BBFB1" stroke-width="0.2"/>
+    </pattern>
+  </defs>
+
+  <!-- title block -->
+  <g font-family="Inter" font-size="9" fill="#4F6D7A">
+    <text x="40" y="22" font-size="14" fill="#2C4654" font-weight="600" letter-spacing="2">MAIN LEVEL — FLOOR PLAN</text>
+    <text x="40" y="36" letter-spacing="1.5">SCALE 1:48 (1/4" = 1'-0")  ·  NORTH ↑  ·  FOOTPRINT 38'-0" × 28'-0"</text>
+    <text x="680" y="22" text-anchor="end" font-size="10" fill="#D88C7A" letter-spacing="2">SHEET A-1.0</text>
+  </g>
+
+  <!-- north arrow -->
+  <g transform="translate(660 70)">
+    <circle r="18" fill="none" stroke="#4F6D7A" stroke-width="0.6"/>
+    <polygon points="0,-14 4,8 0,4 -4,8" fill="#2C4654"/>
+    <text y="-22" text-anchor="middle" font-size="9" fill="#4F6D7A" font-weight="600">N</text>
+  </g>
+
+  <!-- ====== WRAPAROUND FRONT PORCH ====== -->
+  <rect x="60" y="420" width="580" height="60" fill="url(#deckBoards)" stroke="#BFA98C" stroke-width="0.6"/>
+  <text x="350" y="455" text-anchor="middle" font-size="10" fill="#4F6D7A" font-style="italic">WRAPAROUND PORCH</text>
+  <text x="350" y="468" text-anchor="middle" font-size="8" fill="#4F6D7A">8'-0" deep · cedar decking · white railings</text>
+
+  <!-- porch posts (circles) -->
+  <g fill="#FDFCFA" stroke="#1A2832" stroke-width="1">
+    <circle cx="68" cy="428" r="4"/><circle cx="68" cy="472" r="4"/>
+    <circle cx="640" cy="428" r="4"/><circle cx="640" cy="472" r="4"/>
+    <circle cx="200" cy="472" r="3"/><circle cx="340" cy="472" r="3"/>
+    <circle cx="480" cy="472" r="3"/>
+  </g>
+
+  <!-- ====== EXTERIOR ENVELOPE ====== -->
+  <!-- back wall -->
+  <rect x="60" y="80" width="580" height="6" fill="url(#wallHatch)"/>
+  <!-- front wall (with porch openings) -->
+  <rect x="60" y="414" width="580" height="6" fill="url(#wallHatch)"/>
+  <!-- left wall -->
+  <rect x="60" y="80" width="6" height="340" fill="url(#wallHatch)"/>
+  <!-- right wall -->
+  <rect x="634" y="80" width="6" height="340" fill="url(#wallHatch)"/>
+
+  <!-- ====== INTERIOR WALLS ====== -->
+  <!-- vertical wall dining/great room boundary -->
+  <rect x="240" y="86" width="4" height="120" fill="#1A2832"/>
+  <!-- vertical wall great room/kitchen -->
+  <rect x="450" y="86" width="4" height="150" fill="#1A2832"/>
+  <!-- horizontal wall back rooms / great room -->
+  <rect x="66" y="200" width="174" height="4" fill="#1A2832"/>
+  <rect x="244" y="200" width="206" height="4" fill="#1A2832"/>
+  <rect x="454" y="236" width="180" height="4" fill="#1A2832"/>
+  <!-- powder/mudroom partitions -->
+  <rect x="66" y="280" width="120" height="4" fill="#1A2832"/>
+  <rect x="184" y="200" width="4" height="84" fill="#1A2832"/>
+
+  <!-- screened porch wall (back right) -->
+  <rect x="630" y="80" width="4" height="160" fill="#1A2832"/>
+  <rect x="450" y="80" width="190" height="4" fill="#1A2832"/>
+
+  <!-- ====== ROOMS ====== -->
+
+  <!-- KITCHEN -->
+  <rect x="454" y="86" width="180" height="150" fill="url(#tile)" opacity="0.55"/>
+  <text x="544" y="120" text-anchor="middle" font-family="Cormorant Garamond" font-size="14" fill="#2C4654" font-weight="500">KITCHEN</text>
+  <text x="544" y="132" text-anchor="middle" font-size="8" fill="#4F6D7A" letter-spacing="1.5">12'-0" × 14'-0"</text>
+  <!-- island -->
+  <rect x="490" y="158" width="100" height="40" fill="#FDFCFA" stroke="#1A2832" stroke-width="1.2"/>
+  <text x="540" y="182" text-anchor="middle" font-size="7" fill="#4F6D7A">ISLAND · seating 3</text>
+  <!-- counter L -->
+  <rect x="540" y="86" width="94" height="22" fill="#FDFCFA" stroke="#1A2832" stroke-width="1.2"/>
+  <rect x="612" y="86" width="22" height="100" fill="#FDFCFA" stroke="#1A2832" stroke-width="1.2"/>
+  <!-- sink -->
+  <rect x="558" y="92" width="20" height="12" fill="none" stroke="#4F6D7A" stroke-width="0.7" rx="1"/>
+  <!-- range -->
+  <rect x="618" y="120" width="14" height="14" fill="none" stroke="#4F6D7A" stroke-width="0.7"/>
+  <circle cx="621" cy="123" r="1.5" fill="none" stroke="#4F6D7A" stroke-width="0.4"/>
+  <circle cx="629" cy="123" r="1.5" fill="none" stroke="#4F6D7A" stroke-width="0.4"/>
+  <circle cx="621" cy="131" r="1.5" fill="none" stroke="#4F6D7A" stroke-width="0.4"/>
+  <circle cx="629" cy="131" r="1.5" fill="none" stroke="#4F6D7A" stroke-width="0.4"/>
+  <!-- fridge -->
+  <rect x="612" y="200" width="22" height="32" fill="#FDFCFA" stroke="#1A2832" stroke-width="1.2"/>
+  <text x="623" y="218" text-anchor="middle" font-size="6" fill="#4F6D7A">REF</text>
+
+  <!-- DINING -->
+  <rect x="244" y="86" width="206" height="114" fill="#F4EFE6" opacity="0.6"/>
+  <text x="347" y="120" text-anchor="middle" font-family="Cormorant Garamond" font-size="14" fill="#2C4654" font-weight="500">DINING</text>
+  <text x="347" y="132" text-anchor="middle" font-size="8" fill="#4F6D7A" letter-spacing="1.5">14'-0" × 10'-0"</text>
+  <!-- table -->
+  <ellipse cx="347" cy="160" rx="32" ry="18" fill="#BFA98C" stroke="#1A2832" stroke-width="1"/>
+  <!-- chairs (curved rects) -->
+  <g fill="#FDFCFA" stroke="#1A2832" stroke-width="0.7">
+    <rect x="313" y="155" width="6" height="10" rx="2"/>
+    <rect x="375" y="155" width="6" height="10" rx="2"/>
+    <rect x="328" y="135" width="10" height="6" rx="2"/>
+    <rect x="356" y="135" width="10" height="6" rx="2"/>
+    <rect x="328" y="180" width="10" height="6" rx="2"/>
+    <rect x="356" y="180" width="10" height="6" rx="2"/>
+  </g>
+  <!-- pendant -->
+  <circle cx="347" cy="160" r="3" fill="none" stroke="#D88C7A" stroke-width="0.6"/>
+
+  <!-- GREAT ROOM -->
+  <rect x="66" y="204" width="384" height="210" fill="#FDFCFA"/>
+  <text x="258" y="240" text-anchor="middle" font-family="Cormorant Garamond" font-size="16" fill="#2C4654" font-weight="500">GREAT ROOM</text>
+  <text x="258" y="254" text-anchor="middle" font-size="8" fill="#4F6D7A" letter-spacing="1.5">24'-0" × 18'-0" · vaulted ceiling 14'</text>
+  <!-- sectional sofa -->
+  <rect x="100" y="335" width="120" height="22" rx="3" fill="#9BBFB1" stroke="#1A2832" stroke-width="0.7"/>
+  <rect x="100" y="295" width="22" height="62" rx="3" fill="#9BBFB1" stroke="#1A2832" stroke-width="0.7"/>
+  <!-- coffee table -->
+  <rect x="140" y="305" width="50" height="22" fill="#BFA98C" stroke="#1A2832" stroke-width="0.6"/>
+  <!-- accent chairs -->
+  <circle cx="380" cy="320" r="14" fill="#E8C9B8" stroke="#1A2832" stroke-width="0.6"/>
+  <circle cx="380" cy="360" r="14" fill="#E8C9B8" stroke="#1A2832" stroke-width="0.6"/>
+  <!-- fireplace -->
+  <rect x="68" y="240" width="14" height="40" fill="#2C4654"/>
+  <rect x="60" y="240" width="6" height="40" fill="#BFA98C"/>
+  <text x="92" y="262" font-size="7" fill="#4F6D7A">FIRE</text>
+  <!-- area rug -->
+  <rect x="92" y="290" width="180" height="80" fill="none" stroke="#BFA98C" stroke-width="0.4" stroke-dasharray="3,2"/>
+
+  <!-- FOYER (vestibule center front) -->
+  <rect x="240" y="370" width="80" height="44" fill="#E8DCC4" opacity="0.7"/>
+  <text x="280" y="394" text-anchor="middle" font-size="9" fill="#4F6D7A" font-family="Cormorant Garamond" font-style="italic">foyer</text>
+  <rect x="240" y="370" width="4" height="44" fill="#1A2832"/>
+  <rect x="316" y="370" width="4" height="44" fill="#1A2832"/>
+  <rect x="240" y="368" width="80" height="4" fill="#1A2832"/>
+
+  <!-- POWDER ROOM -->
+  <rect x="186" y="204" width="54" height="76" fill="url(#tile)" opacity="0.7"/>
+  <text x="213" y="234" text-anchor="middle" font-size="9" fill="#4F6D7A" font-family="Cormorant Garamond" font-style="italic">powder</text>
+  <text x="213" y="246" text-anchor="middle" font-size="7" fill="#4F6D7A">6'×9'</text>
+  <!-- toilet -->
+  <ellipse cx="222" cy="270" rx="6" ry="4" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.6"/>
+  <!-- vanity -->
+  <rect x="190" y="208" width="20" height="10" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.6"/>
+  <circle cx="200" cy="213" r="2" fill="none" stroke="#4F6D7A" stroke-width="0.4"/>
+
+  <!-- MUDROOM / LAUNDRY -->
+  <rect x="66" y="204" width="118" height="76" fill="#F4EFE6"/>
+  <text x="125" y="232" text-anchor="middle" font-family="Cormorant Garamond" font-size="12" fill="#2C4654" font-weight="500">MUDROOM</text>
+  <text x="125" y="244" text-anchor="middle" font-size="8" fill="#4F6D7A">+ LAUNDRY · 10'-0" × 8'-0"</text>
+  <!-- bench -->
+  <rect x="68" y="262" width="60" height="14" fill="#BFA98C" stroke="#1A2832" stroke-width="0.5"/>
+  <!-- hooks (small rects) -->
+  <g fill="#D88C7A"><rect x="72" y="208" width="2" height="3"/><rect x="82" y="208" width="2" height="3"/>
+     <rect x="92" y="208" width="2" height="3"/><rect x="102" y="208" width="2" height="3"/>
+     <rect x="112" y="208" width="2" height="3"/><rect x="122" y="208" width="2" height="3"/></g>
+  <!-- washer/dryer -->
+  <rect x="140" y="244" width="20" height="22" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.6"/>
+  <rect x="162" y="244" width="20" height="22" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.6"/>
+  <circle cx="150" cy="255" r="6" fill="none" stroke="#4F6D7A" stroke-width="0.4"/>
+  <circle cx="172" cy="255" r="6" fill="none" stroke="#4F6D7A" stroke-width="0.4"/>
+
+  <!-- BACK / STAIRS area -->
+  <rect x="66" y="284" width="174" height="130" fill="#FDFCFA"/>
+  <!-- stair to upper -->
+  <g stroke="#1A2832" stroke-width="0.7" fill="none">
+    <rect x="80" y="290" width="40" height="100" fill="#F4EFE6"/>
+    <line x1="80" y1="298" x2="120" y2="298"/><line x1="80" y1="306" x2="120" y2="306"/>
+    <line x1="80" y1="314" x2="120" y2="314"/><line x1="80" y1="322" x2="120" y2="322"/>
+    <line x1="80" y1="330" x2="120" y2="330"/><line x1="80" y1="338" x2="120" y2="338"/>
+    <line x1="80" y1="346" x2="120" y2="346"/><line x1="80" y1="354" x2="120" y2="354"/>
+    <line x1="80" y1="362" x2="120" y2="362"/><line x1="80" y1="370" x2="120" y2="370"/>
+    <line x1="80" y1="378" x2="120" y2="378"/>
+    <!-- direction arrow -->
+    <polygon points="100,295 96,302 104,302" fill="#D88C7A"/>
+  </g>
+  <text x="100" y="400" text-anchor="middle" font-size="7" fill="#4F6D7A" letter-spacing="1">UP 14R</text>
+
+  <!-- HALL bench / staging area -->
+  <text x="180" y="320" text-anchor="middle" font-family="Cormorant Garamond" font-size="11" fill="#2C4654" font-style="italic">hall</text>
+
+  <!-- SCREENED PORCH -->
+  <rect x="454" y="240" width="180" height="174" fill="url(#deckBoards)" opacity="0.85"/>
+  <text x="544" y="278" text-anchor="middle" font-family="Cormorant Garamond" font-size="13" fill="#2C4654" font-weight="500">SCREENED PORCH</text>
+  <text x="544" y="290" text-anchor="middle" font-size="8" fill="#4F6D7A" letter-spacing="1">12'-0" × 14'-0"</text>
+  <!-- screen line indication -->
+  <g stroke="#4F6D7A" stroke-width="0.4" stroke-dasharray="2,2">
+    <line x1="454" y1="244" x2="634" y2="244"/>
+    <line x1="454" y1="410" x2="634" y2="410"/>
+    <line x1="630" y1="244" x2="630" y2="410"/>
+  </g>
+  <!-- daybed -->
+  <rect x="475" y="335" width="120" height="40" rx="4" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.7"/>
+  <text x="535" y="360" text-anchor="middle" font-size="7" fill="#4F6D7A">DAYBED</text>
+  <!-- small table -->
+  <circle cx="535" cy="310" r="10" fill="#BFA98C" stroke="#1A2832" stroke-width="0.5"/>
+
+  <!-- ====== DIMENSIONS ====== -->
+  <g stroke="#D88C7A" stroke-width="0.4" fill="#D88C7A" font-size="7" font-family="Inter">
+    <!-- total width top -->
+    <line x1="60" y1="60" x2="640" y2="60"/>
+    <line x1="60" y1="56" x2="60" y2="66"/><line x1="640" y1="56" x2="640" y2="66"/>
+    <text x="350" y="55" text-anchor="middle">38'-0"</text>
+    <!-- total height left -->
+    <line x1="40" y1="80" x2="40" y2="420"/>
+    <line x1="36" y1="80" x2="44" y2="80"/><line x1="36" y1="420" x2="44" y2="420"/>
+    <text x="30" y="252" transform="rotate(-90 30 252)" text-anchor="middle">28'-0"</text>
+  </g>
+
+  <!-- door swings (arcs) -->
+  <g fill="none" stroke="#4F6D7A" stroke-width="0.5">
+    <!-- front door -->
+    <path d="M280 414 L280 388 A22 22 0 0 1 302 410 Z"/>
+    <!-- back door from mudroom -->
+    <path d="M66 240 L88 240 A22 22 0 0 1 66 262 Z"/>
+    <!-- screened porch door -->
+    <path d="M454 280 L432 280 A22 22 0 0 0 454 302 Z"/>
+  </g>
+
+  <!-- ====== LEGEND/NOTES ====== -->
+  <g font-size="8" fill="#4F6D7A">
+    <text x="40" y="510" font-weight="600" letter-spacing="1.5">DRAWING NOTES</text>
+    <text x="40" y="522">A. Walls drawn at 4" exterior / 2" interior, hatched walls indicate exterior framing.</text>
+    <text x="40" y="532">B. Furniture symbols are suggestion only — Ashleigh's recommended styling.</text>
+  </g>
+
+  <!-- watermark -->
+  <text x="690" y="510" text-anchor="end" font-family="Caveat" font-size="14" fill="#D88C7A" opacity="0.8">— just me, ashleigh</text>
+</svg>

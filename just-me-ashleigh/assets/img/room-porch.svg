@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" font-family="Inter, sans-serif">
+  <defs>
+    <linearGradient id="porchSky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#F4EFE6"/>
+      <stop offset="100%" stop-color="#D7DEDC"/>
+    </linearGradient>
+    <pattern id="screen" x="0" y="0" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="3" fill="#D7DEDC" opacity="0.4"/>
+      <line x1="0" y1="0" x2="3" y2="0" stroke="#9BBFB1" stroke-width="0.15"/>
+      <line x1="0" y1="0" x2="0" y2="3" stroke="#9BBFB1" stroke-width="0.15"/>
+    </pattern>
+    <pattern id="porchFloor" x="0" y="0" width="50" height="12" patternUnits="userSpaceOnUse">
+      <rect width="50" height="12" fill="#BFA98C"/>
+      <line x1="0" y1="12" x2="50" y2="12" stroke="#8B7355" stroke-width="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- outside (visible through screens) -->
+  <rect x="60" y="60" width="600" height="280" fill="url(#porchSky)"/>
+  <!-- distant ocean band -->
+  <rect x="60" y="220" width="600" height="50" fill="#9BBFB1" opacity="0.6"/>
+  <!-- waves -->
+  <g stroke="#FDFCFA" stroke-width="0.5" fill="none" opacity="0.7">
+    <path d="M60 240 Q 120 236 180 240 T 300 240 T 420 240 T 540 240 T 660 240"/>
+    <path d="M60 260 Q 120 256 180 260 T 300 260 T 420 260 T 540 260 T 660 260"/>
+  </g>
+  <!-- distant sailboat -->
+  <g opacity="0.8">
+    <polygon points="540,228 540,212 555,228" fill="#FDFCFA"/>
+    <line x1="540" y1="212" x2="540" y2="232" stroke="#2C4654" stroke-width="0.5"/>
+  </g>
+
+  <!-- screen panels (overlay) -->
+  <rect x="60" y="60" width="600" height="280" fill="url(#screen)"/>
+
+  <!-- screen frame -->
+  <g fill="#FDFCFA" stroke="#1A2832" stroke-width="0.4">
+    <rect x="60" y="60" width="600" height="8"/>
+    <rect x="60" y="332" width="600" height="8"/>
+    <rect x="60" y="60" width="8" height="280"/>
+    <rect x="160" y="60" width="6" height="280"/>
+    <rect x="260" y="60" width="6" height="280"/>
+    <rect x="360" y="60" width="6" height="280"/>
+    <rect x="460" y="60" width="6" height="280"/>
+    <rect x="560" y="60" width="6" height="280"/>
+    <rect x="652" y="60" width="8" height="280"/>
+    <!-- horizontal divider mid-height -->
+    <rect x="60" y="195" width="600" height="6"/>
+  </g>
+
+  <!-- porch floor (perspective) -->
+  <polygon points="60,340 660,340 600,440 120,440" fill="url(#porchFloor)"/>
+
+  <!-- ceiling fan -->
+  <line x1="360" y1="60" x2="360" y2="100" stroke="#1A2832" stroke-width="0.6"/>
+  <ellipse cx="360" cy="100" rx="6" ry="3" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.5"/>
+  <g fill="#BFA98C" opacity="0.7">
+    <ellipse cx="335" cy="103" rx="22" ry="3"/>
+    <ellipse cx="385" cy="103" rx="22" ry="3"/>
+  </g>
+
+  <!-- DAYBED -->
+  <g fill="#FDFCFA" stroke="#1A2832" stroke-width="0.6">
+    <rect x="160" y="360" width="280" height="60" rx="6"/>
+    <!-- back cushion -->
+    <rect x="160" y="320" width="280" height="46" rx="6"/>
+  </g>
+  <!-- linen striped throw -->
+  <rect x="180" y="370" width="240" height="40" fill="#9BBFB1" opacity="0.4"/>
+  <g stroke="#FDFCFA" stroke-width="0.4" opacity="0.8">
+    <line x1="180" y1="380" x2="420" y2="380"/>
+    <line x1="180" y1="392" x2="420" y2="392"/>
+  </g>
+  <!-- pillows -->
+  <rect x="180" y="335" width="60" height="35" fill="#E8C9B8" stroke="#1A2832" stroke-width="0.4" rx="3"/>
+  <rect x="250" y="332" width="60" height="38" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.4" rx="3"/>
+  <rect x="320" y="335" width="60" height="35" fill="#9BBFB1" stroke="#1A2832" stroke-width="0.4" rx="3"/>
+  <rect x="380" y="338" width="50" height="32" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.4" rx="3"/>
+
+  <!-- side table -->
+  <ellipse cx="500" cy="400" rx="28" ry="10" fill="#BFA98C" stroke="#1A2832" stroke-width="0.5"/>
+  <g stroke="#8B7355" stroke-width="0.8">
+    <line x1="478" y1="402" x2="478" y2="438"/>
+    <line x1="522" y1="402" x2="522" y2="438"/>
+  </g>
+  <!-- lantern on table -->
+  <rect x="488" y="372" width="22" height="28" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.5"/>
+  <g stroke="#1A2832" stroke-width="0.3" fill="none">
+    <line x1="488" y1="380" x2="510" y2="380"/>
+    <line x1="488" y1="392" x2="510" y2="392"/>
+    <line x1="494" y1="372" x2="494" y2="400"/>
+    <line x1="504" y1="372" x2="504" y2="400"/>
+  </g>
+  <circle cx="499" cy="386" r="3" fill="#E8C9B8" opacity="0.8"/>
+
+  <!-- potted fiddle leaf -->
+  <ellipse cx="570" cy="430" rx="18" ry="6" fill="#BFA98C" stroke="#1A2832" stroke-width="0.4"/>
+  <g fill="#9BBFB1">
+    <ellipse cx="555" cy="380" rx="12" ry="14"/>
+    <ellipse cx="580" cy="360" rx="14" ry="16"/>
+    <ellipse cx="565" cy="345" rx="10" ry="12"/>
+    <ellipse cx="585" cy="395" rx="12" ry="14"/>
+  </g>
+  <line x1="570" y1="430" x2="570" y2="395" stroke="#8B7355" stroke-width="1.5"/>
+
+  <!-- caption -->
+  <text x="40" y="468" font-family="Cormorant Garamond" font-size="13" font-style="italic" fill="#4F6D7A">the screened porch — daybed, paddle fan, lantern light, and the sound of the ocean coming through the screens</text>
+</svg>

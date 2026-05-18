@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" font-family="Inter, sans-serif">
+  <defs>
+    <pattern id="sandPattern" patternUnits="userSpaceOnUse" width="10" height="10">
+      <rect width="10" height="10" fill="#E8DCC4"/>
+      <circle cx="3" cy="4" r="0.4" fill="#BFA98C"/>
+      <circle cx="7" cy="7" r="0.3" fill="#BFA98C"/>
+      <circle cx="1" cy="8" r="0.3" fill="#BFA98C"/>
+    </pattern>
+    <pattern id="waterPattern" patternUnits="userSpaceOnUse" width="20" height="6">
+      <rect width="20" height="6" fill="#9BBFB1"/>
+      <path d="M0 3 Q 5 1 10 3 T 20 3" fill="none" stroke="#FDFCFA" stroke-width="0.4" opacity="0.6"/>
+    </pattern>
+    <pattern id="grass" patternUnits="userSpaceOnUse" width="8" height="8">
+      <rect width="8" height="8" fill="#D9C9A8"/>
+      <path d="M2 7 q 0.5 -3 1 -5" stroke="#8B7355" stroke-width="0.3" fill="none"/>
+      <path d="M5 8 q 0.5 -3 1 -5" stroke="#8B7355" stroke-width="0.3" fill="none"/>
+    </pattern>
+  </defs>
+
+  <g font-family="Inter" font-size="9" fill="#4F6D7A">
+    <text x="40" y="22" font-size="14" fill="#2C4654" font-weight="600" letter-spacing="2">SITE PLAN — 0.4 ACRE COASTAL LOT</text>
+    <text x="40" y="36" letter-spacing="1.5">SCALE 1:240  ·  WATERFRONT WITH 60' OF FRONTAGE</text>
+    <text x="680" y="22" text-anchor="end" font-size="10" fill="#D88C7A" letter-spacing="2">SHEET A-0.1</text>
+  </g>
+
+  <g transform="translate(660 70)">
+    <circle r="18" fill="none" stroke="#4F6D7A" stroke-width="0.6"/>
+    <polygon points="0,-14 4,8 0,4 -4,8" fill="#2C4654"/>
+    <text y="-22" text-anchor="middle" font-size="9" fill="#4F6D7A" font-weight="600">N</text>
+  </g>
+
+  <!-- LOT (background grass) -->
+  <rect x="60" y="60" width="600" height="420" fill="url(#grass)" stroke="#4F6D7A" stroke-width="1" stroke-dasharray="5,3"/>
+
+  <!-- BEACH/SAND (back of lot) -->
+  <rect x="60" y="60" width="600" height="120" fill="url(#sandPattern)"/>
+
+  <!-- OCEAN -->
+  <rect x="60" y="60" width="600" height="40" fill="url(#waterPattern)"/>
+
+  <!-- shoreline curve -->
+  <path d="M60 100 Q 200 110, 360 100 T 660 100" fill="none" stroke="#4F6D7A" stroke-width="0.6"/>
+  <path d="M60 120 Q 200 130, 360 120 T 660 120" fill="none" stroke="#9BBFB1" stroke-width="0.4" opacity="0.7"/>
+
+  <text x="360" y="90" text-anchor="middle" font-family="Cormorant Garamond" font-size="16" fill="#FDFCFA" font-style="italic">Atlantic</text>
+
+  <text x="360" y="150" text-anchor="middle" font-family="Cormorant Garamond" font-size="11" fill="#4F6D7A" font-style="italic">beach (60' frontage)</text>
+
+  <!-- DUNES (transition) -->
+  <g fill="#D9C9A8" opacity="0.7">
+    <ellipse cx="180" cy="180" rx="60" ry="14"/>
+    <ellipse cx="360" cy="180" rx="80" ry="16"/>
+    <ellipse cx="540" cy="180" rx="60" ry="14"/>
+  </g>
+  <g stroke="#8B7355" stroke-width="0.4" fill="none">
+    <path d="M150 178 q 2 -8 4 -10"/><path d="M158 178 q -1 -8 -3 -10"/>
+    <path d="M340 174 q 2 -8 4 -10"/><path d="M350 175 q -1 -8 -3 -10"/>
+    <path d="M520 178 q 2 -8 4 -10"/><path d="M530 178 q -1 -8 -3 -10"/>
+  </g>
+
+  <!-- HOUSE FOOTPRINT (rotated -2deg for casual feel) -->
+  <g transform="translate(360 320) rotate(-2)">
+    <!-- main body -->
+    <rect x="-110" y="-50" width="220" height="100" fill="#FDFCFA" stroke="#1A2832" stroke-width="1.2"/>
+    <!-- front porch -->
+    <rect x="-130" y="40" width="260" height="22" fill="#E8DCC4" stroke="#1A2832" stroke-width="0.6"/>
+    <!-- back deck -->
+    <rect x="-60" y="-72" width="140" height="22" fill="#E8DCC4" stroke="#1A2832" stroke-width="0.6"/>
+    <!-- screened porch wing right -->
+    <rect x="60" y="-30" width="68" height="80" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.8" opacity="0.85"/>
+    <!-- mudroom wing left -->
+    <rect x="-128" y="-46" width="20" height="96" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.8"/>
+
+    <!-- roof outline (dashed) -->
+    <rect x="-138" y="-78" width="278" height="148" fill="none" stroke="#BFA98C" stroke-width="0.4" stroke-dasharray="3,2"/>
+
+    <text x="0" y="-5" text-anchor="middle" font-family="Cormorant Garamond" font-size="14" fill="#2C4654" font-style="italic">the cottage</text>
+    <text x="0" y="8" text-anchor="middle" font-size="6" fill="#4F6D7A" letter-spacing="1">38' × 28'</text>
+  </g>
+
+  <!-- DRIVEWAY (curving from south road) -->
+  <path d="M120 480 Q 200 460, 240 420 T 280 350 L 320 350 L 320 380 L 280 380 Q 260 410, 240 440 T 180 480 Z"
+        fill="#BFA98C" stroke="#8B7355" stroke-width="0.5"/>
+  <text x="220" y="430" font-size="8" fill="#4F6D7A" font-family="Cormorant Garamond" font-style="italic" transform="rotate(-25 220 430)">crushed shell drive</text>
+
+  <!-- WALKWAY from drive to porch -->
+  <path d="M280 358 L 240 360 L 235 380 L 290 372 Z" fill="#D9C9A8" stroke="#BFA98C" stroke-width="0.4"/>
+
+  <!-- BACK PATH from deck to beach -->
+  <path d="M360 245 L 355 200 L 365 200 L 370 245 Z" fill="#D9C9A8" stroke="#BFA98C" stroke-width="0.4"/>
+
+  <!-- LANDSCAPING -->
+  <!-- hydrangeas around porch -->
+  <g>
+    <circle cx="220" cy="395" r="9" fill="#9BBFB1" opacity="0.8"/>
+    <circle cx="240" cy="392" r="7" fill="#9BBFB1" opacity="0.8"/>
+    <circle cx="475" cy="395" r="9" fill="#9BBFB1" opacity="0.8"/>
+    <circle cx="495" cy="392" r="7" fill="#9BBFB1" opacity="0.8"/>
+    <circle cx="515" cy="395" r="8" fill="#9BBFB1" opacity="0.8"/>
+  </g>
+
+  <!-- ornamental trees -->
+  <g>
+    <circle cx="155" cy="380" r="20" fill="#8B7355" opacity="0.65"/>
+    <circle cx="155" cy="380" r="14" fill="#BFA98C" opacity="0.85"/>
+    <circle cx="600" cy="375" r="20" fill="#8B7355" opacity="0.65"/>
+    <circle cx="600" cy="375" r="14" fill="#BFA98C" opacity="0.85"/>
+  </g>
+
+  <!-- garden bed strip -->
+  <rect x="100" y="450" width="520" height="14" fill="#D88C7A" opacity="0.4" rx="3"/>
+  <text x="360" y="461" text-anchor="middle" font-size="7" fill="#4F6D7A" font-style="italic" font-family="Cormorant Garamond">native pollinator border — beach grass, sea oats, salvia, lavender</text>
+
+  <!-- ROAD (south boundary) -->
+  <rect x="60" y="490" width="600" height="0" fill="none"/>
+  <text x="120" y="486" font-size="8" fill="#4F6D7A" letter-spacing="1.5">SHORE ROAD</text>
+
+  <!-- Dimensions -->
+  <g stroke="#D88C7A" stroke-width="0.4" fill="#D88C7A" font-size="7" font-family="Inter">
+    <line x1="60" y1="50" x2="660" y2="50"/>
+    <line x1="60" y1="46" x2="60" y2="54"/><line x1="660" y1="46" x2="660" y2="54"/>
+    <text x="360" y="46" text-anchor="middle">120'-0" (lot width)</text>
+    <line x1="40" y1="60" x2="40" y2="480"/>
+    <line x1="36" y1="60" x2="44" y2="60"/><line x1="36" y1="480" x2="44" y2="480"/>
+    <text x="30" y="270" transform="rotate(-90 30 270)" text-anchor="middle">145'-0" (lot depth)</text>
+  </g>
+
+  <!-- adirondack chairs by beach -->
+  <g fill="#D88C7A" stroke="#1A2832" stroke-width="0.4">
+    <rect x="295" y="195" width="6" height="8"/>
+    <rect x="305" y="195" width="6" height="8"/>
+  </g>
+  <text x="312" y="208" font-size="6" fill="#4F6D7A" font-style="italic">adirondacks</text>
+
+  <!-- watermark -->
+  <text x="690" y="510" text-anchor="end" font-family="Caveat" font-size="14" fill="#D88C7A" opacity="0.8">— just me, ashleigh</text>
+</svg>

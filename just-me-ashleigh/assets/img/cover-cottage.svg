@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#F4EFE6"/>
+      <stop offset="55%" stop-color="#E8DCC4"/>
+      <stop offset="100%" stop-color="#D7DEDC"/>
+    </linearGradient>
+    <linearGradient id="ocean" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#9BBFB1"/>
+      <stop offset="100%" stop-color="#4F6D7A"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#E8DCC4"/>
+      <stop offset="100%" stop-color="#D9C9A8"/>
+    </linearGradient>
+    <pattern id="shingles" x="0" y="0" width="6" height="4" patternUnits="userSpaceOnUse">
+      <rect width="6" height="4" fill="#FDFCFA"/>
+      <path d="M0 4 L3 0 L6 4" fill="none" stroke="#D7DEDC" stroke-width="0.3"/>
+    </pattern>
+    <pattern id="siding" x="0" y="0" width="20" height="3.5" patternUnits="userSpaceOnUse">
+      <rect width="20" height="3.5" fill="#FDFCFA"/>
+      <line x1="0" y1="3.5" x2="20" y2="3.5" stroke="#D7DEDC" stroke-width="0.3"/>
+    </pattern>
+  </defs>
+
+  <!-- sky -->
+  <rect width="600" height="800" fill="url(#sky)"/>
+
+  <!-- distant horizon mist -->
+  <rect x="0" y="420" width="600" height="40" fill="#D7DEDC" opacity="0.55"/>
+
+  <!-- ocean -->
+  <rect x="0" y="455" width="600" height="80" fill="url(#ocean)" opacity="0.85"/>
+
+  <!-- shoreline waves -->
+  <g opacity="0.5" stroke="#FDFCFA" stroke-width="0.8" fill="none">
+    <path d="M0 470 Q 30 466, 60 470 T 120 470 T 180 470 T 240 470 T 300 470 T 360 470 T 420 470 T 480 470 T 540 470 T 600 470"/>
+    <path d="M0 490 Q 30 486, 60 490 T 120 490 T 180 490 T 240 490 T 300 490 T 360 490 T 420 490 T 480 490 T 540 490 T 600 490"/>
+    <path d="M0 510 Q 30 506, 60 510 T 120 510 T 180 510 T 240 510 T 300 510 T 360 510 T 420 510 T 480 510 T 540 510 T 600 510"/>
+  </g>
+
+  <!-- dunes / sand -->
+  <path d="M0 540 Q 100 510, 220 530 T 460 540 Q 540 545, 600 530 L 600 800 L 0 800 Z" fill="url(#sand)"/>
+
+  <!-- beach grass tufts (background) -->
+  <g stroke="#8B7355" stroke-width="0.7" fill="none" opacity="0.5">
+    <path d="M40 555 q 2 -10 4 -14"/><path d="M44 555 q -2 -8 -4 -14"/>
+    <path d="M120 548 q 2 -12 4 -16"/><path d="M124 548 q -2 -10 -4 -16"/>
+    <path d="M470 545 q 2 -12 4 -16"/><path d="M474 545 q -2 -10 -4 -16"/>
+    <path d="M560 538 q 2 -10 4 -14"/><path d="M564 538 q -2 -8 -4 -14"/>
+  </g>
+
+  <!-- COTTAGE -->
+  <g>
+    <!-- main body -->
+    <rect x="190" y="380" width="220" height="160" fill="url(#siding)" stroke="#BFA98C" stroke-width="0.8"/>
+
+    <!-- gable -->
+    <polygon points="190,380 300,300 410,380" fill="url(#siding)" stroke="#BFA98C" stroke-width="0.8"/>
+    <polygon points="190,380 300,300 410,380" fill="url(#shingles)" opacity="0.0"/>
+
+    <!-- roof shingles main -->
+    <polygon points="180,388 300,290 420,388 410,395 300,302 190,395" fill="#BFA98C"/>
+    <polygon points="190,393 300,302 410,393 410,398 300,310 190,398" fill="#8B7355" opacity="0.6"/>
+
+    <!-- chimney -->
+    <rect x="350" y="305" width="16" height="38" fill="#FDFCFA" stroke="#BFA98C" stroke-width="0.6"/>
+    <rect x="346" y="302" width="24" height="6" fill="#8B7355"/>
+
+    <!-- left wing/dormer -->
+    <rect x="130" y="430" width="65" height="110" fill="url(#siding)" stroke="#BFA98C" stroke-width="0.8"/>
+    <polygon points="130,430 162,395 195,430" fill="#BFA98C"/>
+    <polygon points="130,432 162,398 195,432 195,436 162,403 130,436" fill="#8B7355" opacity="0.5"/>
+
+    <!-- right porch wing -->
+    <rect x="405" y="450" width="80" height="90" fill="#FDFCFA" stroke="#BFA98C" stroke-width="0.5" opacity="0.95"/>
+    <polygon points="402,450 445,420 488,450" fill="#BFA98C"/>
+    <!-- porch posts -->
+    <line x1="412" y1="455" x2="412" y2="540" stroke="#FDFCFA" stroke-width="3"/>
+    <line x1="445" y1="455" x2="445" y2="540" stroke="#FDFCFA" stroke-width="3"/>
+    <line x1="478" y1="455" x2="478" y2="540" stroke="#FDFCFA" stroke-width="3"/>
+    <line x1="412" y1="455" x2="478" y2="455" stroke="#FDFCFA" stroke-width="2.5"/>
+    <!-- railings -->
+    <line x1="408" y1="515" x2="490" y2="515" stroke="#FDFCFA" stroke-width="1.2"/>
+    <g stroke="#FDFCFA" stroke-width="0.5">
+      <line x1="416" y1="515" x2="416" y2="540"/><line x1="422" y1="515" x2="422" y2="540"/>
+      <line x1="428" y1="515" x2="428" y2="540"/><line x1="434" y1="515" x2="434" y2="540"/>
+      <line x1="440" y1="515" x2="440" y2="540"/><line x1="452" y1="515" x2="452" y2="540"/>
+      <line x1="458" y1="515" x2="458" y2="540"/><line x1="464" y1="515" x2="464" y2="540"/>
+      <line x1="470" y1="515" x2="470" y2="540"/><line x1="476" y1="515" x2="476" y2="540"/>
+    </g>
+
+    <!-- windows (multi-pane) -->
+    <g fill="#4F6D7A" stroke="#FDFCFA" stroke-width="1">
+      <!-- gable round window -->
+      <circle cx="300" cy="345" r="14" fill="#9BBFB1" stroke="#FDFCFA" stroke-width="1.5"/>
+      <line x1="286" y1="345" x2="314" y2="345" stroke="#FDFCFA" stroke-width="0.8"/>
+      <line x1="300" y1="331" x2="300" y2="359" stroke="#FDFCFA" stroke-width="0.8"/>
+
+      <!-- main floor windows -->
+      <rect x="215" y="405" width="32" height="42"/>
+      <rect x="265" y="405" width="32" height="42"/>
+      <rect x="338" y="405" width="32" height="42"/>
+      <!-- mullions -->
+      <g stroke="#FDFCFA" stroke-width="0.8">
+        <line x1="231" y1="405" x2="231" y2="447"/>
+        <line x1="215" y1="426" x2="247" y2="426"/>
+        <line x1="281" y1="405" x2="281" y2="447"/>
+        <line x1="265" y1="426" x2="297" y2="426"/>
+        <line x1="354" y1="405" x2="354" y2="447"/>
+        <line x1="338" y1="426" x2="370" y2="426"/>
+      </g>
+      <!-- shutters -->
+      <g fill="#4F6D7A">
+        <rect x="208" y="405" width="5" height="42"/><rect x="249" y="405" width="5" height="42"/>
+        <rect x="258" y="405" width="5" height="42"/><rect x="299" y="405" width="5" height="42"/>
+        <rect x="331" y="405" width="5" height="42"/><rect x="372" y="405" width="5" height="42"/>
+      </g>
+
+      <!-- ground floor lower windows -->
+      <rect x="215" y="465" width="32" height="46" fill="#E8C9B8" opacity="0.6"/>
+      <rect x="338" y="465" width="32" height="46" fill="#E8C9B8" opacity="0.6"/>
+      <g stroke="#FDFCFA" stroke-width="0.8">
+        <line x1="231" y1="465" x2="231" y2="511"/><line x1="215" y1="488" x2="247" y2="488"/>
+        <line x1="354" y1="465" x2="354" y2="511"/><line x1="338" y1="488" x2="370" y2="488"/>
+      </g>
+
+      <!-- left wing windows -->
+      <rect x="142" y="445" width="22" height="28"/>
+      <rect x="142" y="485" width="22" height="28"/>
+      <g stroke="#FDFCFA" stroke-width="0.7">
+        <line x1="153" y1="445" x2="153" y2="473"/><line x1="142" y1="459" x2="164" y2="459"/>
+        <line x1="153" y1="485" x2="153" y2="513"/><line x1="142" y1="499" x2="164" y2="499"/>
+      </g>
+    </g>
+
+    <!-- front door (Dutch door, signature blue) -->
+    <rect x="285" y="460" width="30" height="60" fill="#2C4654" stroke="#FDFCFA" stroke-width="1"/>
+    <line x1="285" y1="488" x2="315" y2="488" stroke="#FDFCFA" stroke-width="1"/>
+    <circle cx="307" cy="492" r="0.8" fill="#D88C7A"/>
+    <!-- transom -->
+    <rect x="282" y="450" width="36" height="9" fill="#9BBFB1" stroke="#FDFCFA" stroke-width="0.8"/>
+
+    <!-- door steps -->
+    <rect x="278" y="520" width="44" height="3" fill="#BFA98C"/>
+    <rect x="274" y="523" width="52" height="3" fill="#8B7355"/>
+
+    <!-- planters -->
+    <ellipse cx="262" cy="528" rx="8" ry="3" fill="#FDFCFA" stroke="#BFA98C" stroke-width="0.5"/>
+    <ellipse cx="338" cy="528" rx="8" ry="3" fill="#FDFCFA" stroke="#BFA98C" stroke-width="0.5"/>
+    <g stroke="#9BBFB1" stroke-width="1.2" fill="none">
+      <path d="M258 525 q 2 -6 4 -10"/><path d="M262 525 q 0 -8 0 -12"/><path d="M266 525 q -2 -6 -4 -10"/>
+      <path d="M334 525 q 2 -6 4 -10"/><path d="M338 525 q 0 -8 0 -12"/><path d="M342 525 q -2 -6 -4 -10"/>
+    </g>
+  </g>
+
+  <!-- path -->
+  <path d="M298 540 Q 290 600, 280 700 L 320 700 Q 310 600, 302 540 Z" fill="#D9C9A8" stroke="#BFA98C" stroke-width="0.4"/>
+  <g stroke="#BFA98C" stroke-width="0.3" opacity="0.7">
+    <line x1="280" y1="560" x2="320" y2="560"/><line x1="278" y1="585" x2="322" y2="585"/>
+    <line x1="276" y1="615" x2="324" y2="615"/><line x1="274" y1="650" x2="326" y2="650"/>
+    <line x1="272" y1="690" x2="328" y2="690"/>
+  </g>
+
+  <!-- foreground beach grass tufts -->
+  <g stroke="#8B7355" stroke-width="0.9" fill="none">
+    <path d="M60 720 q 3 -22 6 -30"/><path d="M68 720 q -2 -18 -6 -28"/>
+    <path d="M130 740 q 3 -22 6 -30"/><path d="M138 740 q -2 -18 -6 -28"/>
+    <path d="M190 730 q 3 -22 6 -30"/><path d="M198 730 q -2 -18 -6 -28"/>
+    <path d="M380 740 q 3 -22 6 -30"/><path d="M388 740 q -2 -18 -6 -28"/>
+    <path d="M460 720 q 3 -22 6 -30"/><path d="M468 720 q -2 -18 -6 -28"/>
+    <path d="M530 740 q 3 -22 6 -30"/><path d="M538 740 q -2 -18 -6 -28"/>
+  </g>
+
+  <!-- distant sailboat -->
+  <g opacity="0.7">
+    <polygon points="510,465 510,455 522,465" fill="#FDFCFA"/>
+    <polygon points="510,465 510,460 504,465" fill="#FDFCFA" opacity="0.85"/>
+    <line x1="510" y1="455" x2="510" y2="467" stroke="#2C4654" stroke-width="0.6"/>
+  </g>
+
+  <!-- birds -->
+  <g stroke="#4F6D7A" stroke-width="0.8" fill="none">
+    <path d="M120 220 q 4 -3 8 0 q 4 -3 8 0"/>
+    <path d="M160 250 q 3 -2 6 0 q 3 -2 6 0"/>
+    <path d="M450 200 q 4 -3 8 0 q 4 -3 8 0"/>
+  </g>
+
+  <!-- sun glow -->
+  <circle cx="450" cy="170" r="38" fill="#FDFCFA" opacity="0.55"/>
+  <circle cx="450" cy="170" r="22" fill="#E8C9B8" opacity="0.55"/>
+</svg>

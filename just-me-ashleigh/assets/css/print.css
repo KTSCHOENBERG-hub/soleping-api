@@ -1,0 +1,403 @@
+/* =========================================================
+   JUST ME ASHLEIGH — SALTWATER COTTAGE
+   Print stylesheet — A4 portrait, 60-page concept plan
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Caveat:wght@400;500;600&display=swap');
+
+/* --- Design tokens ------------------------------------------------------- */
+:root {
+  --sand:        #E8DCC4;
+  --sand-deep:   #D9C9A8;
+  --driftwood:   #BFA98C;
+  --seafog:      #D7DEDC;
+  --ocean:       #4F6D7A;
+  --deep:        #2C4654;
+  --foam:        #FDFCFA;
+  --shell:       #E8C9B8;
+  --seaglass:    #9BBFB1;
+  --ink:         #1A2832;
+  --ink-soft:    #43525E;
+  --rope:        #8B7355;
+  --coral:       #D88C7A;
+
+  --serif:  'Cormorant Garamond', Georgia, serif;
+  --sans:   'Inter', -apple-system, sans-serif;
+  --script: 'Caveat', cursive;
+}
+
+/* --- Page setup --------------------------------------------------------- */
+@page {
+  size: A4 portrait;
+  margin: 14mm 16mm 16mm 16mm;
+  background: var(--foam);
+
+  @bottom-left {
+    content: 'JUST ME ASHLEIGH';
+    font-family: var(--sans);
+    font-size: 7pt;
+    letter-spacing: 0.3em;
+    color: var(--ocean);
+  }
+  @bottom-center {
+    content: 'THE SALTWATER COTTAGE';
+    font-family: var(--sans);
+    font-size: 7pt;
+    letter-spacing: 0.3em;
+    color: var(--ocean);
+  }
+  @bottom-right {
+    content: counter(page);
+    font-family: var(--serif);
+    font-size: 9pt;
+    color: var(--ocean);
+  }
+}
+
+/* (Removed @page :first — using @page bleed for the cover instead) */
+
+@page bleed {
+  margin: 0;
+  background: #FDFCFA;
+  @bottom-left  { content: none; }
+  @bottom-center{ content: none; }
+  @bottom-right { content: none; }
+}
+
+@page chapter {
+  margin: 0;
+  background: #2C4654;
+  @bottom-left  { content: none; }
+  @bottom-center{ content: none; }
+  @bottom-right { content: none; }
+}
+
+/* --- Base type ---------------------------------------------------------- */
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0;
+  font-family: var(--sans);
+  font-size: 9.5pt;
+  line-height: 1.45;
+  color: var(--ink);
+  background: var(--foam);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 { font-family: var(--serif); font-weight: 400; color: var(--deep); }
+h1 { font-size: 40pt; line-height: 1.05; letter-spacing: -0.01em; margin: 0 0 0.4em; }
+h2 { font-size: 24pt; line-height: 1.1;  margin: 0 0 0.3em; }
+h3 { font-size: 14pt; line-height: 1.2;  margin: 0 0 0.3em; letter-spacing: 0.01em; }
+h4 { font-size: 9.5pt; font-family: var(--sans); font-weight: 600;
+     text-transform: uppercase; letter-spacing: 0.18em; color: var(--ocean);
+     margin: 0 0 0.4em; }
+
+p { margin: 0 0 0.6em; }
+p.lede { font-family: var(--serif); font-size: 13pt; line-height: 1.4; color: var(--ink-soft); font-weight: 300; font-style: italic; }
+em { font-style: italic; }
+strong { font-weight: 600; color: var(--deep); }
+
+a { color: var(--ocean); text-decoration: none; }
+
+ul, ol { margin: 0 0 0.8em; padding-left: 1.1em; }
+li { margin: 0.18em 0; }
+
+hr.rule {
+  border: none; height: 1px; background: var(--driftwood);
+  width: 60px; margin: 1.2em 0;
+}
+
+.script { font-family: var(--script); font-size: 22pt; color: var(--ocean); }
+.eyebrow { font-family: var(--sans); font-size: 8pt; font-weight: 600;
+           letter-spacing: 0.3em; text-transform: uppercase; color: var(--coral); }
+.caption { font-family: var(--sans); font-size: 8pt; color: var(--ink-soft);
+           letter-spacing: 0.04em; font-style: italic; }
+
+/* --- Page primitives ---------------------------------------------------- */
+.page, .cover {
+  break-after: page;
+  page-break-after: always;
+  break-before: page;
+  page-break-before: always;
+  position: relative;
+  display: block;
+}
+body > section:first-child { page-break-before: auto; break-before: auto; }
+body > section:last-child { page-break-after: auto; break-after: auto; }
+
+.page.bleed, .cover { page: bleed; }
+.page.chapter { page: chapter; }
+.chapter-cover { height: 297mm; width: 210mm; box-sizing: border-box; }
+.cover { height: 297mm; width: 210mm; overflow: hidden; }
+
+/* Folio/marker (top corner page label) */
+.folio {
+  position: absolute; top: 0; left: 0;
+  font-family: var(--sans); font-size: 7pt; font-weight: 600;
+  letter-spacing: 0.3em; color: var(--coral); text-transform: uppercase;
+}
+.folio .num { color: var(--ocean); margin-left: 8mm; }
+
+/* --- Layout helpers ----------------------------------------------------- */
+.row { display: flex; gap: 8mm; }
+.col { flex: 1; }
+.center { text-align: center; }
+.muted { color: var(--ink-soft); }
+
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8mm; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6mm; }
+.grid-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 5mm; }
+
+.section {
+  border-top: 0.6pt solid var(--driftwood);
+  padding-top: 4mm; margin-top: 6mm;
+}
+
+/* --- Pull/quote callouts ----------------------------------------------- */
+.callout {
+  background: var(--sand);
+  border-left: 2pt solid var(--coral);
+  padding: 6mm 7mm;
+  font-family: var(--serif);
+  font-size: 12pt;
+  font-style: italic;
+  color: var(--deep);
+  margin: 4mm 0;
+}
+
+.card {
+  background: var(--foam);
+  border: 0.6pt solid var(--seafog);
+  padding: 5mm;
+  border-radius: 1mm;
+}
+.card.dark {
+  background: var(--deep);
+  color: var(--foam);
+  border-color: var(--deep);
+}
+.card.dark h3, .card.dark h4 { color: var(--shell); }
+
+.tag {
+  display: inline-block;
+  background: var(--seaglass);
+  color: var(--deep);
+  font-family: var(--sans); font-size: 7pt; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.18em;
+  padding: 1mm 3mm; border-radius: 2mm;
+  margin-right: 1mm;
+}
+
+/* --- Swatch tile (color palette etc.) ---------------------------------- */
+.swatch {
+  border-radius: 1mm;
+  padding: 30mm 4mm 4mm;
+  color: var(--foam);
+  font-family: var(--sans); font-size: 8pt;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  min-height: 40mm;
+}
+.swatch .name { font-family: var(--serif); font-size: 12pt; line-height: 1; margin-bottom: 1mm; }
+.swatch .hex  { letter-spacing: 0.18em; font-weight: 500; font-size: 7pt; opacity: 0.9; }
+.swatch.light { color: var(--ink); }
+
+/* Material chip (mood board) */
+.chip {
+  border-radius: 50%;
+  width: 38mm; height: 38mm;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--serif); font-size: 11pt; color: var(--foam);
+  text-align: center; padding: 6mm; line-height: 1.1;
+  box-shadow: inset 0 0 0 1pt rgba(255,255,255,0.08);
+}
+
+/* --- Tables (materials lists, tools) ----------------------------------- */
+table.spec {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--sans);
+  font-size: 9pt;
+}
+table.spec th, table.spec td {
+  text-align: left;
+  padding: 1.6mm 2.4mm;
+  border-bottom: 0.4pt solid var(--seafog);
+  vertical-align: top;
+  font-size: 8.5pt;
+  line-height: 1.3;
+}
+table.spec thead th {
+  font-family: var(--sans); font-weight: 600; font-size: 7.5pt;
+  letter-spacing: 0.2em; text-transform: uppercase; color: var(--ocean);
+  border-bottom: 1pt solid var(--driftwood);
+}
+table.spec tbody tr:nth-child(even) td { background: rgba(232,220,196,0.25); }
+table.spec td.num { font-variant-numeric: tabular-nums; color: var(--ink-soft); }
+table.spec td.qty { width: 22mm; }
+table.spec td.unit{ width: 22mm; }
+table.spec td.code{ font-family: 'Inter', monospace; font-size: 8pt; color: var(--coral); letter-spacing: 0.05em; }
+
+/* --- Step list (build instructions) ------------------------------------ */
+ol.steps { counter-reset: step; list-style: none; padding: 0; }
+ol.steps li {
+  counter-increment: step;
+  position: relative;
+  padding: 0 0 2.5mm 10mm;
+  border-bottom: 0.3pt dotted var(--seafog);
+  margin-bottom: 2.5mm;
+}
+ol.steps p { font-size: 9pt; line-height: 1.35; }
+ol.steps li:last-child { border-bottom: none; }
+ol.steps li::before {
+  content: counter(step, decimal-leading-zero);
+  position: absolute; left: 0; top: 0;
+  font-family: var(--serif); font-size: 13pt;
+  color: var(--coral); font-style: italic;
+}
+ol.steps h4 { margin-bottom: 1mm; }
+ol.steps p { font-size: 9.5pt; margin: 0; }
+.tip {
+  display: block;
+  margin-top: 1.5mm;
+  font-family: var(--serif); font-style: italic; font-size: 9.5pt;
+  color: var(--ocean);
+}
+.tip::before { content: '☼ '; color: var(--coral); }
+
+/* --- Hero / chapter pages ---------------------------------------------- */
+.hero {
+  position: relative;
+  height: 100%;
+  background: linear-gradient(180deg, var(--seafog) 0%, var(--sand) 100%);
+  display: flex; flex-direction: column; justify-content: center;
+}
+.hero .hero-art {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.hero .hero-art svg { width: 100%; height: 100%; }
+.hero-copy { position: relative; padding: 0 20mm; }
+
+.chapter-cover {
+  height: 297mm; width: 210mm;
+  background: var(--deep);
+  color: var(--foam);
+  padding: 40mm 24mm;
+  display: flex; flex-direction: column; justify-content: space-between;
+  position: relative;
+}
+.chapter-cover .ch-num {
+  font-family: var(--serif); font-style: italic; font-size: 18pt; color: var(--shell);
+}
+.chapter-cover h1 { color: var(--foam); font-size: 54pt; }
+.chapter-cover p  { color: var(--seafog); max-width: 130mm; font-family: var(--serif); font-size: 13pt; font-style: italic; }
+.chapter-cover .ch-tag { color: var(--coral); letter-spacing: 0.4em; font-size: 9pt; font-weight: 600; text-transform: uppercase; font-family: var(--sans); }
+
+/* --- Cover (page 1) ----------------------------------------------------- */
+.cover {
+  page: bleed;
+  height: 297mm; width: 210mm;
+  background: var(--foam);
+  position: relative;
+  overflow: hidden;
+}
+.cover .cover-art { position: absolute; top:0; left:0; right:0; bottom:0; width:210mm; height:297mm; }
+.cover .cover-art img { width: 210mm; height: 297mm; display: block; }
+.cover .cover-text {
+  position: absolute; left: 22mm; right: 22mm; bottom: 32mm;
+  color: var(--deep);
+}
+.cover .brand {
+  font-family: var(--sans); font-size: 9pt; font-weight: 600;
+  letter-spacing: 0.4em; text-transform: uppercase; color: var(--coral);
+  margin-bottom: 6mm;
+}
+.cover h1 { font-size: 64pt; line-height: 0.95; color: var(--deep); margin-bottom: 6mm; }
+.cover .tagline { font-family: var(--serif); font-style: italic; font-size: 16pt; color: var(--ocean); max-width: 130mm; }
+.cover .edition {
+  position: absolute; right: 22mm; top: 22mm;
+  font-family: var(--sans); font-size: 7.5pt; letter-spacing: 0.3em; color: var(--ocean);
+  text-align: right; text-transform: uppercase;
+}
+
+/* --- TOC ---------------------------------------------------------------- */
+ol.toc { list-style: none; padding: 0; margin: 0; column-count: 2; column-gap: 10mm; }
+ol.toc li {
+  break-inside: avoid;
+  display: flex; align-items: baseline; gap: 2.5mm;
+  font-family: var(--sans); font-size: 8.5pt;
+  padding: 0.8mm 0; border-bottom: 0.4pt dotted var(--driftwood);
+  margin: 0;
+}
+ol.toc li .pn { font-family: var(--serif); font-size: 11pt; color: var(--coral); width: 9mm; }
+ol.toc li .ti { flex: 1; color: var(--ink); }
+ol.toc li .pg { font-family: var(--serif); font-size: 11pt; color: var(--ocean); }
+ol.toc li.section-head {
+  border-bottom: 1pt solid var(--ocean);
+  margin-top: 3mm;
+  padding-top: 3mm;
+  font-weight: 600;
+  color: var(--ocean);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 8pt;
+}
+ol.toc li.section-head .pn { color: var(--ocean); }
+ol.toc li.section-head .ti { color: var(--ocean); }
+
+/* --- Floor plan / drawing pages ---------------------------------------- */
+.plan-page { display: block; }
+.plan-art { background: var(--foam); border: 0.4pt solid var(--seafog); padding: 4mm; display: block; margin-top: 5mm; min-height: 220mm; text-align: center; }
+.plan-art svg, .plan-art img { width: 100%; height: auto; max-height: 215mm; display: block; }
+.plan-legend { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; font-size: 8pt; }
+.plan-legend .li { display: flex; align-items: center; gap: 2mm; }
+.plan-legend .li .sw { width: 4mm; height: 4mm; border-radius: 0.5mm; border: 0.4pt solid var(--ink-soft); }
+
+/* --- Mood board grid --------------------------------------------------- */
+.mood {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 60mm 30mm 30mm 30mm;
+  gap: 3mm;
+  height: 100%;
+}
+.mood > div { border-radius: 1mm; overflow: hidden; display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 12pt; color: var(--foam); text-align: center; padding: 5mm; }
+
+/* --- Misc --------------------------------------------------------------- */
+.kv { display: grid; grid-template-columns: 36mm 1fr; row-gap: 2mm; column-gap: 4mm; font-size: 9pt; }
+.kv dt { font-family: var(--sans); font-size: 7.5pt; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ocean); }
+.kv dd { margin: 0; font-family: var(--serif); font-size: 12pt; color: var(--deep); }
+
+.signature {
+  font-family: var(--script);
+  font-size: 28pt;
+  color: var(--ocean);
+}
+
+.brand-mark {
+  font-family: var(--serif); font-style: italic;
+  font-size: 12pt; color: var(--coral);
+}
+
+/* --- Specific patterns / motifs ---------------------------------------- */
+.wave {
+  height: 6mm;
+  background: url("../img/wave.svg") repeat-x center;
+  background-size: auto 100%;
+  margin: 3mm 0;
+}
+
+.divider {
+  display: flex; align-items: center; gap: 4mm; margin: 4mm 0;
+  font-family: var(--sans); font-size: 8pt;
+  letter-spacing: 0.3em; color: var(--ocean); text-transform: uppercase;
+}
+.divider::before, .divider::after {
+  content: ''; flex: 1; height: 0.6pt; background: var(--driftwood);
+}
+
+/* Watermark (interior only — non-bleed) */
+.wm {
+  position: absolute; bottom: 2mm; right: 0;
+  font-family: var(--script); font-size: 14pt; color: var(--coral); opacity: 0.6;
+}

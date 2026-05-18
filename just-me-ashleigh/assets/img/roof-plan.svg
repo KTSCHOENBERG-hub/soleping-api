@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" font-family="Inter, sans-serif">
+  <defs>
+    <pattern id="rpShingles" x="0" y="0" width="20" height="6" patternUnits="userSpaceOnUse">
+      <rect width="20" height="6" fill="#BFA98C"/>
+      <line x1="0" y1="6" x2="20" y2="6" stroke="#8B7355" stroke-width="0.4"/>
+      <line x1="10" y1="0" x2="10" y2="6" stroke="#8B7355" stroke-width="0.4"/>
+    </pattern>
+  </defs>
+
+  <g font-family="Inter" font-size="9" fill="#4F6D7A">
+    <text x="40" y="22" font-size="14" fill="#2C4654" font-weight="600" letter-spacing="2">ROOF PLAN</text>
+    <text x="40" y="36" letter-spacing="1.5">SCALE 1:48  ·  RIDGE LINES + EAVE OVERHANGS + WIDOW'S WALK</text>
+    <text x="680" y="22" text-anchor="end" font-size="10" fill="#D88C7A" letter-spacing="2">SHEET A-2.2</text>
+  </g>
+
+  <g transform="translate(660 70)">
+    <circle r="18" fill="none" stroke="#4F6D7A" stroke-width="0.6"/>
+    <polygon points="0,-14 4,8 0,4 -4,8" fill="#2C4654"/>
+    <text y="-22" text-anchor="middle" font-size="9" fill="#4F6D7A" font-weight="600">N</text>
+  </g>
+
+  <!-- main roof (gable, hipped on right wing) -->
+  <polygon points="100,150 620,150 620,420 100,420" fill="url(#rpShingles)" stroke="#1A2832" stroke-width="0.6"/>
+
+  <!-- main ridge -->
+  <line x1="100" y1="285" x2="620" y2="285" stroke="#1A2832" stroke-width="1.2"/>
+  <text x="115" y="282" font-size="7" fill="#4F6D7A" font-style="italic">main ridge</text>
+
+  <!-- hips/valleys -->
+  <line x1="100" y1="150" x2="200" y2="285" stroke="#1A2832" stroke-width="0.7"/>
+  <line x1="100" y1="420" x2="200" y2="285" stroke="#1A2832" stroke-width="0.7"/>
+  <line x1="620" y1="150" x2="520" y2="285" stroke="#1A2832" stroke-width="0.7"/>
+  <line x1="620" y1="420" x2="520" y2="285" stroke="#1A2832" stroke-width="0.7"/>
+
+  <!-- dormers / sub gables -->
+  <g fill="#D9C9A8" stroke="#1A2832" stroke-width="0.6">
+    <!-- left wing gable -->
+    <polygon points="60,200 140,200 140,370 60,370"/>
+    <line x1="60" y1="285" x2="140" y2="285" stroke="#1A2832" stroke-width="1"/>
+    <line x1="60" y1="200" x2="100" y2="285" stroke="#1A2832" stroke-width="0.5"/>
+    <line x1="60" y1="370" x2="100" y2="285" stroke="#1A2832" stroke-width="0.5"/>
+    <line x1="140" y1="200" x2="100" y2="285" stroke="#1A2832" stroke-width="0.5"/>
+    <line x1="140" y1="370" x2="100" y2="285" stroke="#1A2832" stroke-width="0.5"/>
+  </g>
+
+  <g fill="#D9C9A8" stroke="#1A2832" stroke-width="0.6">
+    <polygon points="580,220 660,220 660,350 580,350"/>
+    <line x1="580" y1="285" x2="660" y2="285" stroke="#1A2832" stroke-width="1"/>
+    <line x1="580" y1="220" x2="620" y2="285" stroke="#1A2832" stroke-width="0.5"/>
+    <line x1="580" y1="350" x2="620" y2="285" stroke="#1A2832" stroke-width="0.5"/>
+    <line x1="660" y1="220" x2="620" y2="285" stroke="#1A2832" stroke-width="0.5"/>
+    <line x1="660" y1="350" x2="620" y2="285" stroke="#1A2832" stroke-width="0.5"/>
+  </g>
+
+  <!-- dormers on front -->
+  <g fill="#FDFCFA" stroke="#1A2832" stroke-width="0.5">
+    <rect x="240" y="395" width="40" height="25"/>
+    <rect x="340" y="395" width="40" height="25"/>
+    <rect x="440" y="395" width="40" height="25"/>
+    <polygon points="240,395 260,378 280,395" stroke-width="0.5"/>
+    <polygon points="340,395 360,378 380,395" stroke-width="0.5"/>
+    <polygon points="440,395 460,378 480,395" stroke-width="0.5"/>
+  </g>
+  <text x="360" y="438" text-anchor="middle" font-size="7" fill="#4F6D7A" font-style="italic">3 shed dormers along front (south) elevation</text>
+
+  <!-- widow's walk platform -->
+  <rect x="320" y="245" width="80" height="80" fill="#E8DCC4" stroke="#1A2832" stroke-width="0.8" stroke-dasharray="4,2"/>
+  <text x="360" y="282" text-anchor="middle" font-size="9" fill="#2C4654" font-family="Cormorant Garamond" font-style="italic">widow's</text>
+  <text x="360" y="294" text-anchor="middle" font-size="9" fill="#2C4654" font-family="Cormorant Garamond" font-style="italic">walk</text>
+  <!-- railings around widow's walk -->
+  <g stroke="#1A2832" stroke-width="0.4">
+    <line x1="320" y1="245" x2="400" y2="245"/>
+    <line x1="320" y1="325" x2="400" y2="325"/>
+    <line x1="320" y1="245" x2="320" y2="325"/>
+    <line x1="400" y1="245" x2="400" y2="325"/>
+  </g>
+  <!-- balusters -->
+  <g stroke="#1A2832" stroke-width="0.2">
+    <line x1="328" y1="245" x2="328" y2="325"/><line x1="336" y1="245" x2="336" y2="325"/>
+    <line x1="344" y1="245" x2="344" y2="325"/><line x1="352" y1="245" x2="352" y2="325"/>
+    <line x1="368" y1="245" x2="368" y2="325"/><line x1="376" y1="245" x2="376" y2="325"/>
+    <line x1="384" y1="245" x2="384" y2="325"/><line x1="392" y1="245" x2="392" y2="325"/>
+  </g>
+
+  <!-- chimney -->
+  <rect x="475" y="265" width="20" height="30" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.5"/>
+  <rect x="471" y="261" width="28" height="6" fill="#8B7355"/>
+  <text x="485" y="310" text-anchor="middle" font-size="7" fill="#4F6D7A" font-style="italic">chimney</text>
+
+  <!-- screened porch roof (hipped) -->
+  <g fill="url(#rpShingles)" stroke="#1A2832" stroke-width="0.5">
+    <polygon points="420,420 620,420 620,500 420,500"/>
+    <line x1="420" y1="420" x2="480" y2="460" stroke-width="0.4"/>
+    <line x1="420" y1="500" x2="480" y2="460" stroke-width="0.4"/>
+    <line x1="620" y1="420" x2="560" y2="460" stroke-width="0.4"/>
+    <line x1="620" y1="500" x2="560" y2="460" stroke-width="0.4"/>
+    <line x1="480" y1="460" x2="560" y2="460" stroke="#1A2832" stroke-width="1"/>
+  </g>
+  <text x="520" y="487" text-anchor="middle" font-size="7" fill="#4F6D7A" font-style="italic">screened porch roof — hipped</text>
+
+  <!-- eave overhangs (outer dashed) -->
+  <rect x="80" y="130" width="560" height="310" fill="none" stroke="#D88C7A" stroke-width="0.4" stroke-dasharray="3,2"/>
+  <text x="640" y="446" text-anchor="end" font-size="7" fill="#D88C7A" font-style="italic">— — — 18" eave overhang</text>
+
+  <!-- pitch indicators -->
+  <g font-size="7" fill="#4F6D7A" font-family="Inter">
+    <text x="200" y="200" letter-spacing="0.5">PITCH 10:12</text>
+    <text x="500" y="200" letter-spacing="0.5">PITCH 10:12</text>
+    <text x="100" y="240" letter-spacing="0.5">PITCH 8:12</text>
+    <text x="600" y="240" letter-spacing="0.5">PITCH 8:12</text>
+  </g>
+
+  <!-- gutter callouts -->
+  <g fill="#4F6D7A" font-size="6" font-family="Inter" font-style="italic">
+    <text x="200" y="148">half-round copper gutters typical</text>
+    <text x="200" y="430">half-round copper gutters typical</text>
+  </g>
+
+  <g font-size="8" fill="#4F6D7A">
+    <text x="40" y="510" font-weight="600" letter-spacing="1.5">ROOFING NOTES</text>
+    <text x="40" y="522">Cedar shingles applied at 5" exposure, finished naturally to weather silver. Copper flashing at all valleys, chimney, and widow's walk perimeter.</text>
+  </g>
+</svg>

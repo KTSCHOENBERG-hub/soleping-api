@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" font-family="Inter, sans-serif">
+  <defs>
+    <pattern id="bShiplap" x="0" y="0" width="20" height="6" patternUnits="userSpaceOnUse">
+      <rect width="20" height="6" fill="#FDFCFA"/>
+      <line x1="0" y1="6" x2="20" y2="6" stroke="#D7DEDC" stroke-width="0.4"/>
+    </pattern>
+    <pattern id="bRope" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#BFA98C"/>
+    </pattern>
+  </defs>
+
+  <!-- ceiling sloped -->
+  <polygon points="60,60 360,30 660,60 660,160 60,180" fill="#9BBFB1" opacity="0.5"/>
+  <!-- walls shiplap -->
+  <rect x="60" y="180" width="600" height="220" fill="url(#bShiplap)"/>
+  <!-- floor -->
+  <rect x="60" y="400" width="600" height="40" fill="#BFA98C"/>
+
+  <!-- exposed ridge beam -->
+  <polygon points="200,40 460,32 520,55 240,65" fill="#8B7355" stroke="#1A2832" stroke-width="0.4"/>
+
+  <!-- LEFT BUNK -->
+  <g>
+    <!-- frame -->
+    <rect x="100" y="200" width="200" height="200" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.8"/>
+    <!-- upper bunk -->
+    <rect x="110" y="220" width="180" height="70" fill="#F4EFE6" stroke="#1A2832" stroke-width="0.5"/>
+    <rect x="110" y="220" width="180" height="14" fill="#9BBFB1"/>
+    <!-- pillow upper -->
+    <rect x="120" y="240" width="40" height="20" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.3" rx="2"/>
+    <!-- duvet upper -->
+    <rect x="170" y="260" width="115" height="25" fill="#E8C9B8" opacity="0.7"/>
+    <!-- ladder rope -->
+    <rect x="180" y="290" width="6" height="100" fill="url(#bRope)"/>
+    <g fill="none" stroke="#BFA98C" stroke-width="0.6">
+      <line x1="178" y1="310" x2="190" y2="310"/>
+      <line x1="178" y1="330" x2="190" y2="330"/>
+      <line x1="178" y1="350" x2="190" y2="350"/>
+      <line x1="178" y1="370" x2="190" y2="370"/>
+    </g>
+    <!-- lower bunk -->
+    <rect x="110" y="310" width="180" height="80" fill="#F4EFE6" stroke="#1A2832" stroke-width="0.5"/>
+    <rect x="110" y="310" width="180" height="14" fill="#9BBFB1"/>
+    <rect x="200" y="330" width="40" height="22" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.3" rx="2"/>
+    <rect x="200" y="352" width="85" height="35" fill="#E8C9B8" opacity="0.7"/>
+
+    <!-- reading lights -->
+    <circle cx="280" cy="240" r="3" fill="#D88C7A"/>
+    <circle cx="280" cy="335" r="3" fill="#D88C7A"/>
+  </g>
+
+  <!-- RIGHT BUNK -->
+  <g>
+    <rect x="420" y="200" width="200" height="200" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.8"/>
+    <rect x="430" y="220" width="180" height="70" fill="#F4EFE6" stroke="#1A2832" stroke-width="0.5"/>
+    <rect x="430" y="220" width="180" height="14" fill="#9BBFB1"/>
+    <rect x="440" y="240" width="40" height="20" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.3" rx="2"/>
+    <rect x="490" y="260" width="115" height="25" fill="#E8C9B8" opacity="0.7"/>
+    <rect x="500" y="290" width="6" height="100" fill="url(#bRope)"/>
+    <g fill="none" stroke="#BFA98C" stroke-width="0.6">
+      <line x1="498" y1="310" x2="510" y2="310"/>
+      <line x1="498" y1="330" x2="510" y2="330"/>
+      <line x1="498" y1="350" x2="510" y2="350"/>
+      <line x1="498" y1="370" x2="510" y2="370"/>
+    </g>
+    <rect x="430" y="310" width="180" height="80" fill="#F4EFE6" stroke="#1A2832" stroke-width="0.5"/>
+    <rect x="430" y="310" width="180" height="14" fill="#9BBFB1"/>
+    <rect x="520" y="330" width="40" height="22" fill="#FDFCFA" stroke="#1A2832" stroke-width="0.3" rx="2"/>
+    <rect x="520" y="352" width="85" height="35" fill="#E8C9B8" opacity="0.7"/>
+
+    <circle cx="600" cy="240" r="3" fill="#D88C7A"/>
+    <circle cx="600" cy="335" r="3" fill="#D88C7A"/>
+  </g>
+
+  <!-- porthole window between bunks -->
+  <circle cx="360" cy="290" r="40" fill="#9BBFB1" stroke="#FDFCFA" stroke-width="3"/>
+  <circle cx="360" cy="290" r="40" fill="none" stroke="#BFA98C" stroke-width="2"/>
+  <line x1="320" y1="290" x2="400" y2="290" stroke="#FDFCFA" stroke-width="1"/>
+  <line x1="360" y1="250" x2="360" y2="330" stroke="#FDFCFA" stroke-width="1"/>
+
+  <!-- bunting/garland -->
+  <g stroke="#D88C7A" stroke-width="0.5" fill="none">
+    <path d="M60 90 Q 360 130 660 90"/>
+  </g>
+  <g fill="#D88C7A">
+    <polygon points="120,108 128,108 124,118"/>
+    <polygon points="200,118 208,118 204,128"/>
+    <polygon points="280,124 288,124 284,134"/>
+    <polygon points="360,128 368,128 364,138"/>
+    <polygon points="440,124 448,124 444,134"/>
+    <polygon points="520,118 528,118 524,128"/>
+    <polygon points="600,108 608,108 604,118"/>
+  </g>
+
+  <!-- caption -->
+  <text x="40" y="468" font-family="Cormorant Garamond" font-size="13" font-style="italic" fill="#4F6D7A">the bunk room — sleeps four, twin built-in bunks with rope ladders, vaulted shiplap ceiling, and a porthole between</text>
+</svg>
